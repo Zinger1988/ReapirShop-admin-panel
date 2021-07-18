@@ -13,6 +13,13 @@ html {
   line-height: $base-line-height;
   color: $base-text-color;
   overflow-x: hidden;
+
+  @include media(">=xl"){
+
+    &.no-overflow{
+      overflow: auto;
+    }
+  }
 }
 
 body{

@@ -76,17 +76,17 @@ $(document).ready(function () {
             navToggleBtn.click(() => {
                 if(!sidebarNav.hasClass('main__sidebar--active')){
                     sidebarNav.addClass('main__sidebar--active');
-                    $('body').addClass('no-overflow');
+                    $('html, body').addClass('no-overflow');
                 } else {
                     sidebarNav.removeClass('main__sidebar--active');
-                    $('body').removeClass('no-overflow');
+                    $('html, body').removeClass('no-overflow');
                 }
             })
 
             $(document).bind("mouseup touchend", function (e) {
                 if (!sidebarNav.is(e.target) && sidebarNav.hasClass('main__sidebar--active') && sidebarNav.has(e.target).length === 0) {
                     sidebarNav.removeClass('main__sidebar--active');
-                    $('body').removeClass('no-overflow');
+                    $('html, body').removeClass('no-overflow');
                 }
             });
         },
