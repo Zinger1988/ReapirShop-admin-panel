@@ -1,0 +1,29 @@
+.content-footer{
+  background-color: $dodgerBlue;
+  color: $white;
+  border-radius: 0 0 6px 6px;
+  padding: 1.25rem;
+
+  @include media(">=xl"){
+    padding: 1rem 1.5rem 1rem 2rem;
+  }
+
+  @include media(">=xxxxl"){
+    padding: 1rem 1.5rem 1rem 3rem;
+  }
+
+  @include media(">=xl"){
+    display: flex;
+    align-items: center;
+  }
+
+  &__pagination{
+    width: 100%;
+    margin: 0 0 .6rem;
+
+    @include media(">=md"){
+      width: auto;
+      margin: 0 0 0 auto;
+    }
+  }
+}

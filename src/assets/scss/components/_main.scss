@@ -1,0 +1,36 @@
+.main{
+
+  @include media(">=xl"){
+    padding-left: 30rem;
+  }
+
+  &__sidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 30rem;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: $sidebar-z-index;
+    transform: translateX(-120%);
+    @include animate(transform);
+
+    @include media(">=xl"){
+      transform: translateX(0);
+    }
+
+    &--active{
+      transform: translateX(0);
+    }
+  }
+
+  &__content{
+    margin-bottom: 4rem;
+
+    @include media(">=md"){
+      margin-bottom: 6rem;
+    }
+  }
+
+}

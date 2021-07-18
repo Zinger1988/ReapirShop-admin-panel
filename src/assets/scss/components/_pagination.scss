@@ -1,0 +1,51 @@
+.pagination{
+  display: inline-flex;
+  align-items: center;
+  background-color: $white;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,110,206,.4);
+
+  &__arrow{
+    @extend %linkreset;
+    width: 3.3rem;
+    height: 3.3rem;
+    background-color: $scienceBlue;
+    color: $white;
+    text-align: center;
+    line-height: 3.3rem;
+    @include animate(background-color);
+
+    @include media(">=md"){
+      width: 4rem;
+      height: 4rem;
+      line-height: 4rem;
+    }
+
+    &:first-child{
+      border-radius: 4px 0 0 4px;
+    }
+
+    &:last-child{
+      border-radius: 0 4px 4px 0;
+    }
+
+    &:hover{
+      background-color: darken($scienceBlue, 10%);
+    }
+  }
+
+  &__arrow-icon{
+    font-size: 1.1rem;
+    line-height: 1;
+  }
+
+  &__arrow-text{
+    display: none;
+  }
+
+  &__select-pre{
+    flex-grow: 1;
+    box-shadow: none;
+  }
+
+}

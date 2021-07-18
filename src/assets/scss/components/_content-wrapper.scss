@@ -1,0 +1,29 @@
+.content-wrapper{
+  background-color: $white;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgba($black, .16);
+
+  &__content-head{
+    margin-bottom: 2rem;
+  }
+
+  &__body{
+    padding: 0 2rem 2rem;
+
+    @include media(">=xxxl"){
+      padding: 0 2rem 3rem;
+    }
+  }
+
+  &__active-filters{
+    margin-bottom: 1rem;
+  }
+
+  //&__active-filters{
+  //  padding: 0 2rem;
+  //
+  //  @include media(">=xxxl"){
+  //    padding: 0 3rem;
+  //  }
+  //}
+}

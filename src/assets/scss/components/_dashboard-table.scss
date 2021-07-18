@@ -1,0 +1,137 @@
+.dashboard-table{
+  border-collapse: collapse;
+  width: 100%;
+
+  $this: &;
+
+  &__head-cell{
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: rgba($base-text-color, .5);
+    padding: .6rem 1.25rem;
+    border-bottom: 1px solid rgba(#707070, .2);
+
+    @include media(">=xxl"){
+      font-size: 1.3rem;
+      padding: 1rem 1.6rem;
+
+      &:first-child{
+        padding-left: 2rem;
+      }
+
+      &:last-child{
+        padding-right: 2rem;
+      }
+    }
+
+    @include media(">=xxxl"){
+
+      &:first-child{
+        padding-left: 3rem;
+      }
+
+      &:last-child{
+        padding-right: 3rem;
+      }
+    }
+  }
+
+  &__cell{
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid rgba(#707070, .2);
+
+    @include media(">=xxl"){
+      padding: 1.4rem 1.6rem;
+
+      &:first-child{
+        padding-left: 2rem;
+      }
+
+      &:last-child{
+        padding-right: 2rem;
+      }
+    }
+
+    @include media(">=xxxl"){
+
+      &:first-child{
+        padding-left: 3rem;
+      }
+
+      &:last-child{
+        padding-right: 3rem;
+      }
+    }
+  }
+
+  &__product{
+    @extend %linkreset;
+    display: flex;
+
+    &:hover{
+      #{$this}__product-name{
+        color: $dodgerBlue;
+        text-decoration: underline $dodgerBlue;
+      }
+    }
+  }
+
+  &__product-img{
+    flex-shrink: 0;
+    margin: 0 1rem 0 0;
+    width: 4.4rem;
+    height: 4.4rem;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 3px;
+    border: 1px solid rgba(#707070, .2);
+
+    @include media(">=550px"){
+      width: 5.4rem;
+      height: 5.4rem;
+      margin: 0 1.5rem 0 0;
+    }
+
+    @include media(">=xxl"){
+      width: 6rem;
+      height: 6rem;
+      margin: 0 2rem 0 0;
+    }
+  }
+
+  &__product-info{
+    align-self: center;
+
+    @include media(">=1440px"){
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__product-name{
+    font-size: 1.3rem;
+    display: block;
+    margin: 0 0 .5rem;
+    text-decoration: underline transparent;
+    @include animate(text-decoration color);
+
+    @include media(">=1440px"){
+      margin: 0;
+    }
+  }
+
+  &__product-price{
+    display: block;
+    font-size: 1.4rem;
+
+    @include media(">=1440px"){
+      width: 11rem;
+      flex-shrink: 0;
+      padding-left: 1rem;
+      text-align: right;
+    }
+  }
+
+}

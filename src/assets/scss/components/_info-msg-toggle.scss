@@ -1,0 +1,21 @@
+.info-msg-toggle{
+  @extend %linkreset;
+
+  $this: &;
+
+  &:hover{
+    #{$this}__icon{
+      color: $dodgerBlue;
+    }
+  }
+
+  &__icon{
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #999999;
+  }
+
+  &__text{
+    display: none;
+  }
+}

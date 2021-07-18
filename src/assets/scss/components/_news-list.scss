@@ -1,0 +1,41 @@
+.news-list{
+  @extend %listreset;
+
+  &__item{
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgba(#C7C7C7, .35);
+
+    @include media(">=xxxl"){
+      padding: 1.7rem 3rem;
+    }
+  }
+
+  &__date{
+    color: rgba($base-text-color, .5);
+    margin-bottom: .25rem;
+    font-size: 1.2rem;
+
+    @include media(">=xxxl"){
+      font-size: 1.3rem;
+      margin-bottom: .4rem;
+    }
+  }
+
+  &__link{
+    @extend %linkreset;
+    @include animate(color text-decoration);
+    text-decoration: underline transparent;
+    font-size: 1.3rem;
+    font-weight: 500;
+
+    @include media(">=xxxl"){
+      font-size: 1.5rem;
+    }
+
+    &:hover{
+      color: $dodgerBlue;
+      text-decoration: underline $dodgerBlue;
+    }
+  }
+
+}

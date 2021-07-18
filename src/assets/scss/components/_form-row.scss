@@ -1,0 +1,41 @@
+.form-row{
+  display: block;
+
+  $this: &;
+
+  &__title{
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: .4rem;
+    color: rgba($base-text-color, .5);
+  }
+
+  &__control{
+    width: 100%;
+  }
+
+  &--double{
+    display: flex;
+    flex-wrap: wrap;
+
+    #{$this}__title{
+      width: 100%;
+      flex-shrink: 0;
+    }
+
+    #{$this}__control{
+      width: 50%;
+
+      &:first-of-type{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      &:last-of-type{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-left: none;
+      }
+    }
+  }
+}

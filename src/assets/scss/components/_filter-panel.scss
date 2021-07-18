@@ -1,0 +1,52 @@
+.filter-panel{
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  background-color: $white;
+  z-index: 50;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 3px 10px rgba(0,0,0,.16);
+
+  &--active{
+    display: block;
+  }
+
+  &__body{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    grid-gap: 1.5rem;
+
+    @include media(">=xxl"){
+      padding: 2rem 3rem 3rem;
+    }
+
+    @include media(">=xxxxl"){
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  &__footer{
+    padding: 2rem 2rem 2.25rem;
+    background-color: #F8F8F8;
+    border-radius: 0 0 6px 6px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include media(">=xxxxl"){
+      padding: 2.5rem 2.5rem 3rem;
+    }
+  }
+
+  &__footer-btn{
+    margin: 0 .5rem .75rem;
+
+    @include media(">=xxxxl"){
+      margin: 0 .75rem 1rem;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+.info-graph{
+
+  &__top{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+    margin-bottom: .6rem;
+
+    @include media(">=xxl"){
+      margin-bottom: 1.6rem;
+    }
+
+    @include media(">=xxxxl"){
+      padding: 0 3rem;
+    }
+  }
+
+  &__top-item{
+    flex: 1 0 auto;
+  }
+
+  &__top-item:not(:last-child){
+    border-right: 1px solid rgba($black,.1);
+    padding-right: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__legend{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    @include media(">=xxxxl"){
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__legend-color{
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 3px;
+    margin-right: .666rem;
+    flex-shrink: 0;
+
+    @include media(">=xxxxl"){
+      width: 1.4rem;
+      height: 1.4rem;
+      margin-right: 1rem;
+    }
+  }
+
+  &__legend-name{
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    font-weight: 500;
+    flex-shrink: 0;
+
+    @include media(">=xxxxl"){
+      font-size: 1.2rem;
+      line-height: 1.4rem;
+    }
+  }
+
+  &__value-abs{
+    font-size: 1.8rem;
+    line-height: 1;
+    display: inline-block;
+    margin-bottom: .6rem;
+
+    @include media(">=xxxxl"){
+      font-size: 2rem;
+    }
+  }
+
+  &__value-rel{
+    font-size: 1.3rem;
+    color: rgba($base-text-color, .5);
+
+    @include media(">=xxxxl"){
+      font-size: 1.5rem;
+    }
+  }
+
+  &__bottom{
+    display: flex;
+  }
+
+  &__bottom-item{
+    flex-shrink: 0;
+    height: .9rem;
+  }
+}

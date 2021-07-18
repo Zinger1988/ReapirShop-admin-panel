@@ -1,0 +1,106 @@
+.btn{
+  @extend %buttonreset;
+  display: inline-flex;
+  font: 700 1.2rem $base-font-family;
+  text-transform: uppercase;
+  padding: 1.07em 2em;
+  border-radius: 4px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+
+  @include media(">=md"){
+    font-size: 1.4rem;
+  }
+
+  &__icon{
+    margin-right: .75em;
+  }
+
+  &--size--sm{
+    font-weight: 400;
+    text-transform: none;
+    padding: .7em 1.25em;
+  }
+
+  &--style--grey{
+    color: rgba(#606060, .6);
+    background-color: rgba($black, .05);
+    box-shadow: none;
+    @include animate(background-color color);
+
+    &:hover{
+      background-color: rgba($black, .1);
+      color: rgba(#606060, .7);
+    }
+  }
+
+  &:disabled,
+  &:disabled:hover,
+  &--style--grey:disabled,
+  &--style--grey:disabled:hover{
+    color: rgba(#606060, .6);
+    background-color: rgba($black, .05);
+    box-shadow: none;
+    cursor: default;
+  }
+
+  &--style--blue{
+    color: $white;
+    background-color: $dodgerBlue;
+    box-shadow: 0 2px 8px rgba(0,110,206,.4);
+    @include animate(background-color);
+
+    &:hover{
+      background-color: darken($dodgerBlue, 10%);
+    }
+  }
+
+  &--style--green{
+    color: $white;
+    background-color: $mountainMeadow;
+    box-shadow: 0 2px 8px rgba($mountainMeadow,.4);
+    @include animate(background-color);
+
+    &:hover{
+      background-color: darken($mountainMeadow, 6%);
+    }
+  }
+
+  &--style--dark-blue{
+    color: $white;
+    background-color: $scienceBlue;
+    box-shadow: 0 2px 8px rgba(0,110,206,.4);
+    @include animate(background-color);
+
+    &:hover{
+      background-color: darken($scienceBlue, 10%);
+    }
+  }
+
+  &--style--light-blue{
+    color: $dodgerBlue;
+    background-color: rgba($dodgerBlue, .2);
+    @include animate(background-color color);
+
+    &:hover{
+      color: darken($dodgerBlue, 10%);
+      background-color: rgba($dodgerBlue, .35);
+    }
+  }
+
+  &--style--outline-blue{
+    background-color: transparent;
+    color: $dodgerBlue;
+    box-shadow: inset 0 0 0 2px $dodgerBlue;
+    @include animate(background-color color box-shadow);
+
+    &:hover{
+      background-color: darken($dodgerBlue, 10%);
+      box-shadow:
+              inset 0 0 0 2px darken($dodgerBlue, 10%),
+              0 2px 8px rgba(0,110,206,.4);
+      color: $white;
+    }
+  }
+}

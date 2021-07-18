@@ -1,0 +1,49 @@
+.crumbs{
+
+  &__list{
+    @extend %listreset;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__list-item{
+    font-size: 1.2rem;
+    position: relative;
+    padding-right: 1.6rem;
+    margin-right: .6rem;
+    max-width: 100%;
+
+    &::after{
+      content: "\e814";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: "Fontello";
+      font-size: .8rem;
+      line-height: 1;
+    }
+
+    &:last-child{
+      padding-right: 0;
+
+      &::after{
+        display: none;
+      }
+    }
+  }
+
+  &__list-link,
+  &__list-current{
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__list-link{
+    text-decoration: none;
+  }
+
+}

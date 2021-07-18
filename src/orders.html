@@ -1,0 +1,129 @@
+---
+layout: default
+title: Admin-panel
+---
+
+<main class="main page__main">
+
+    {{> sidebar }}
+
+    <div class="main__content content">
+        <div class="container">
+
+            <div class="crumbs content__crumbs">
+                <ul class="crumbs__list">
+                    <li class="crumbs__list-item">
+                        <a class="crumbs__list-link" href="#">Главная</a>
+                    </li>
+                    <li class="crumbs__list-item">
+                        <span class="crumbs__list-current">Список заказов</span>
+                    </li>
+                </ul>
+            </div><!-- crumbs -->
+
+            <div class="content-wrapper content__content-wrapper">
+
+                <div class="content-wrapper__content-head content-head">
+
+                    <h2 class="content-head__title">Список заказов</h2>
+
+                    <div class="content-head__settings">
+
+                        <button class="content-head__filter-btn btn btn--style--dark-blue">
+                            <i class="content-head__filter-btn-icon icon--equalizer"></i>
+                            <span class="content-head__filter-btn-text">Фильтры</span>
+                        </button>
+
+                        <div class="pagination content-head__pagination">
+                            <a href="#" class="pagination__arrow">
+                                <i class="pagination__arrow-icon icon--arrow-angle-left"></i>
+                                <span class="pagination__arrow-text">Предыдущая страница</span>
+                            </a>
+                            <div class="select-pre pagination__select-pre">
+                                <span class="select-pre__pre">Страница</span>
+                                <select class="select-pre__body select2">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <a href="#" class="pagination__arrow">
+                                <i class="pagination__arrow-icon icon--arrow-angle-right"></i>
+                                <span class="pagination__arrow-text">Следующая страница</span>
+                            </a>
+                        </div><!-- pagination -->
+
+                        <div class="select-pre content-head__select-pre">
+                            <span class="select-pre__pre">На странице</span>
+                            <select class="select-pre__body select2">
+                                <option value="30">30</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select>
+                        </div><!-- select pre -->
+
+                    </div><!-- content head settings -->
+
+                    {{> filter-panel }}
+
+                </div><!--content head-->
+
+                <div class="content-wrapper__body content-wrapper__body--table">
+
+                    <div class="active-filters content-wrapper__active-filters">
+
+                        <div class="active-filters__title">Активные фильтры:</div>
+
+                        <button class="active-filters__item">
+                            <span class="active-filters__item-text">Разрешение к выдаче: <b class="active-filters__item-value">Все</b></span>
+                            <i class="active-filters__item-icon icon--cancel"></i>
+                        </button>
+
+                        <button class="active-filters__item">
+                            <span class="active-filters__item-text">Выдача: <b class="active-filters__item-value">Выдан</b></span>
+                            <i class="active-filters__item-icon icon--cancel"></i>
+                        </button>
+
+                        <button class="active-filters__item active-filters__item--clear">
+                            <span class="active-filters__item-text">Сбросить все фильтры</span>
+                        </button>
+
+                    </div><!--active filters-->
+
+                    {{> regular-table }}
+
+                </div><!--content wrapper body-->
+
+                <div class="content-wrapper__content-footer content-footer">
+
+                    <div class="pagination content-footer__pagination">
+                        <a href="#" class="pagination__arrow">
+                            <i class="pagination__arrow-icon icon--arrow-angle-left"></i>
+                            <span class="pagination__arrow-text">Предыдущая страница</span>
+                        </a>
+                        <div class="select-pre pagination__select-pre">
+                            <span class="select-pre__pre">Страница</span>
+                            <select class="select-pre__body select2">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <a href="#" class="pagination__arrow">
+                            <i class="pagination__arrow-icon icon--arrow-angle-right"></i>
+                            <span class="pagination__arrow-text">Следующая страница</span>
+                        </a>
+                    </div><!-- pagination -->
+
+                </div><!--content footer-->
+
+            </div><!--content wrapper-->
+
+        </div>
+    </div><!--main content-->
+
+</main><!--page main-->

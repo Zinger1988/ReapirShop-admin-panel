@@ -1,0 +1,47 @@
+.message-box{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  grid-gap: .6rem;
+
+  &__item{
+    padding: 1rem;
+    border: 1px solid rgba(#C7C7C7, .35);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title{
+    text-align: center;
+    font-size: 1.2rem;
+    color: $empreror;
+
+    @include media(">=xxxxl"){
+      font-size: 1.4rem;
+    }
+  }
+
+  &__value{
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1;
+    margin: auto 0 0;
+    padding: 1rem 0;
+    color: #C7C7C7;
+    font-weight: 300;
+
+    &--active{
+      color: $base-text-color;
+    }
+
+    @include media(">=xxxxl"){
+      font-size: 3rem;
+      padding: 1.2rem 0;
+    }
+  }
+
+  &__footer-btn{
+    display: flex;
+  }
+
+}

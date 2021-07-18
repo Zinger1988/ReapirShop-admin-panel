@@ -1,0 +1,33 @@
+.select-pre{
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,110,206,.4);
+
+  &__pre{
+    flex-grow: 1;
+    flex-shrink: 0;
+    color: rgba($base-text-color,.5);
+    padding: .8rem 0 .8rem 1.3rem;
+    background-color: $white;
+    border-radius: 4px 0 0 4px;
+
+    @include media(">=md"){
+      padding: 1.1rem 0 1.1rem 1.3rem;
+    }
+  }
+
+  .select2-container--default .select2-selection--single {
+    border: none;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .select2-container--default .select2-selection--single .select2-selection__rendered{
+    font-weight: 500;
+    padding-right: 2.7rem;
+  }
+
+  .select2-container--default .select2-selection--single .select2-selection__arrow{
+    width: 2.7rem;
+  }
+
+}

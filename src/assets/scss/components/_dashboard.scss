@@ -1,0 +1,17 @@
+.dashboard{
+
+  @include media(">=800px"){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
+
+  @include media(">=xxl"){
+    grid-template-columns: 6fr 5fr;
+  }
+
+  &__info-tile{
+    margin-bottom: 2rem;
+  }
+
+}

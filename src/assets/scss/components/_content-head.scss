@@ -1,0 +1,93 @@
+.content-head{
+  background-color: $dodgerBlue;
+  color: $white;
+  border-radius: 6px 6px 0 0;
+  padding: 1.25rem;
+  position: relative;
+
+  @include media(">=xl"){
+    padding: 1rem 1.5rem 1rem 2rem;
+  }
+
+  @include media(">=xxxxl"){
+    padding: 1rem 1.5rem 1rem 3rem;
+  }
+
+  @include media(">=xl"){
+    display: flex;
+    align-items: center;
+  }
+
+  &__title{
+    font-size: 2rem;
+    margin: 0 0 1.25rem;
+    font-weight: 500;
+
+    @include media(">=xl"){
+      margin: 0;
+      flex-grow: 1;
+      padding-right: 1.5rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  &__settings{
+    @include media(">=md"){
+      display: flex;
+      align-items: center;
+    }
+
+    @include media(">=xl"){
+      flex-shrink: 0;
+    }
+  }
+
+  &__filter-btn{
+    align-items: center;
+    width: 100%;
+    padding: 1em 1.571em 1em 1.285em;
+    margin: 0 0 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,110,206,.4);
+    @include animate(background-color);
+
+    &--active{
+      background-color: #00C2FF;
+
+      &:hover{
+        background-color: lighten(#00C2FF, 15%);
+      }
+    }
+
+    @include media(">=md"){
+      margin: 0 1.5rem 0 0;
+      padding: .58em 1.571em .58em 1.285em;
+      flex: 0;
+    }
+  }
+
+  &__filter-btn-text{
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__filter-btn-icon{
+    font-size: 1.428em;
+    margin: 0 .75em 0 0;
+  }
+
+  &__pagination{
+    width: 100%;
+    margin: 0 0 .6rem;
+
+    @include media(">=md"){
+      margin: 0 1.5rem 0 0;
+    }
+  }
+
+  &__select-pre{
+    width: 100%;
+  }
+
+}

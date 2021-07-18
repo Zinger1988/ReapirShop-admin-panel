@@ -1,0 +1,40 @@
+.dashboard-delivery{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  &__info{
+    font-size: 1.3rem;
+    flex-grow: 1;
+
+    @include media(">=xxxxl"){
+      font-size: 1.5rem;
+    }
+  }
+
+  &__logo{
+    flex-shrink: 0;
+    margin-right: 2rem;
+  }
+
+  &__logo-item{
+    width: 3.5rem;
+    height: 5rem;
+    object-fit: contain;
+    object-position: center;
+
+    @include media(">=xxxxl"){
+      width: 5.3rem;
+      height: 7.5rem;
+    }
+  }
+
+  &__footer{
+    display: flex;
+    align-items: center;
+  }
+
+  &__footer-rules{
+    margin-right: 1rem;
+  }
+}

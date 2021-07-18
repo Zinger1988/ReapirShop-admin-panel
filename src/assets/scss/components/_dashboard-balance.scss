@@ -1,0 +1,107 @@
+.dashboard-balance{
+  @include media(">=sm"){
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+            "summary grey"
+            "info grey"
+            "top-up top-up";
+  }
+
+  &__summary{
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    @include media(">=sm"){
+      grid-area: summary;
+    }
+
+    @include media(">=xxxxl"){
+      font-size: 2.2rem;
+    }
+  }
+
+  &__grey-zone{
+    color: rgba($base-text-color, .5);
+    margin-bottom: 1rem;
+
+    @include media(">=sm"){
+      grid-area: grey;
+    }
+
+    @include media(">=xxxxl"){
+      font-size: 1.5rem;
+    }
+  }
+
+  &__grey-zone-item{
+    display: block;
+  }
+
+  &__info{
+    @extend %listreset;
+    display: grid;
+    grid-template-columns: minmax(50%, max-content) 45%;
+    grid-gap: .7rem 1.5rem;
+    font-size: 1.4rem;
+    margin: 0 0 1.5rem;
+
+    @include media(">=sm"){
+      grid-area: info;
+    }
+
+    @include media(">=xxxxl"){
+      font-size: 1.6rem;
+      grid-gap: 1rem 2rem;
+      margin: 0 0 2rem;
+    }
+  }
+
+  &__info-attr{
+    margin: 0;
+    color: rgba($base-text-color, .5);
+  }
+
+  &__info-param{
+    margin: 0;
+  }
+
+  &__top-up{
+    display: flex;
+    align-items: center;
+
+    @include media(">=sm"){
+      grid-area: top-up;
+    }
+  }
+
+  &__top-up-input::-webkit-outer-spin-button,
+  &__top-up-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+  &__top-up-input{
+    outline: none;
+    -moz-appearance:textfield;
+    height: 4rem;
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid #707070;
+    font-size: 1.4rem;
+    margin-right: 1rem;
+    flex-grow: 1;
+
+    @include media(">=md"){
+      height: 4.6rem;
+    }
+
+    @include media(">=xl"){
+      font-size: 1.6rem;
+    }
+
+    &:focus{
+      border-bottom: 1px solid #111;
+    }
+  }
+}

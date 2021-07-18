@@ -1,0 +1,81 @@
+.rating-graph{
+
+  @include media(">=xxl"){
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    grid-gap: .6rem;
+  }
+
+  &__item{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    @include media(">=xxl"){
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 0;
+    }
+  }
+
+  &__pre{
+    color: $empreror;
+    font-size: 1.3rem;
+    width: 50%;
+
+    @include media(">=xxl"){
+      width: auto;
+      margin-bottom: .9rem;
+    }
+
+    @include media(">=xxxxl"){
+      font-size: 1.4rem;
+      text-align: center;
+    }
+  }
+
+  &__body{
+    width: 50%;
+    padding-left: 1.5rem;
+
+    @include media(">=xxl"){
+      width: auto;
+      padding: 0;
+    }
+  }
+
+  &__value{
+    font-size: 2rem;
+    line-height: 1;
+    display: inline-block;
+    margin: 0 .25em 0 0;
+    font-weight: 300;
+
+    @include media(">=xxl"){
+      display: block;
+      text-align: center;
+      margin: 0 0 .25rem;
+    }
+
+    @include media(">=xxxxl"){
+      font-size: 3rem;
+    }
+  }
+
+  &__post{
+    font-size: 1.3rem;
+    color: #C7C7C7;
+    display: inline-block;
+
+    @include media(">=xxl"){
+      display: block;
+      text-align: center;
+    }
+
+    @include media(">=xxxxl"){
+      font-size: 1.4rem;
+    }
+  }
+
+}

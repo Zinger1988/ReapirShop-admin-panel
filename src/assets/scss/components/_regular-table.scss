@@ -1,0 +1,130 @@
+.regular-table{
+  width: 100%;
+
+  $this: &;
+
+  &--collapsed{
+
+    #{$this}__row{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+      grid-gap: 1px;
+      margin-bottom: 1.5rem;
+      background-color: #F6F6F6;
+      border-radius: 6px;
+      overflow: hidden;
+
+      @include media(">=md"){
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @include media(">=xxxl"){
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      &--head{
+        display: none;
+      }
+    }
+
+    #{$this}__cell{
+      font-size: 1.2rem;
+      color: #2E424E;
+      padding: .5rem 1rem;
+      background-color: #DDE5EA;
+      display: grid;
+      align-items: center;
+
+      @include media(">=xxl"){
+        font-size: 1.3rem;
+        padding: .6rem 1.5rem;
+      }
+    }
+
+    #{$this}__cell-inner{
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      position: relative;
+
+      &::before{
+        content: attr(data-cell-name);
+        position: relative;
+        z-index: 5;
+        padding: .2rem .6rem .2rem 0;
+        font-weight: 500;
+        font-size: 1.1rem;
+        color: rgba(#2E424E, .6);
+
+        @include media(">=xxl"){
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    #{$this}__cell-content{
+      max-width: 50%;
+      flex-shrink: 0;
+      text-align: right;
+      z-index: 5;
+      padding: .2rem 0 .2rem .6rem;
+      font-weight: 500;
+    }
+
+    #{$this}__cell--controls{
+      grid-column: 1 / -1;
+      padding: 1rem 1rem;
+
+      @include media(">=xxl"){
+        padding: 1.5rem 1.5rem;
+      }
+
+      #{$this}__cell-inner::before,
+      #{$this}__cell-inner::after{
+        display: none;
+      }
+
+      #{$this}__cell-content{
+        max-width: none;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  &--expaned{
+    border-collapse: collapse;
+
+    #{$this}__row:nth-child(odd){
+      #{$this}__cell:not(#{$this}__cell--head){
+        background-color: #FCFCFC;
+      }
+    }
+
+    #{$this}__cell{
+      padding: 1rem 1.7rem;
+      font-size: 1.2rem;
+      border: 1px solid #E8E8E8;
+      color: rgba($base-text-color, .6);
+
+      @include media(">=xxxl"){
+        padding: 1.6rem 2rem;
+        font-size: 1.3rem;
+      }
+
+      &--head{
+        text-align: left;
+        padding: 1rem 1.7rem;
+        background-color: #EEEEEE;
+        border: 1px solid #E1E1E1;
+        font-size: 1.1rem;
+
+        @include media(">=xxxl"){
+          padding: 1.2rem 2rem;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

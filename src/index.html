@@ -1,0 +1,178 @@
+---
+layout: default
+title: Admin-panel
+---
+
+<main class="main page__main">
+
+    {{> sidebar }}
+
+    <div class="main__content">
+        <div class="container">
+
+            <section class="dashboard">
+
+                <div class="dashboard__col">
+
+                    <article class="dashboard__info-tile info-tile">
+
+                        <header class="info-tile__header">
+                            <h3 class="info-tile__header-title">Заказы</h3>
+                            <a href="#" class="info-tile__header-link">
+                                <span class="info-tile__header-link-text">Смотреть все</span>
+                                <i class="info-tile__header-link-icon icon--arrow-right"></i>
+                            </a>
+                        </header><!--info tile header-->
+
+                        <div class="info-tile__main info-tile__main--graph">
+
+                            {{> info-graph }}
+
+                        </div><!--info tile main-->
+
+                    </article><!--info tile-->
+
+                    <article class="dashboard__info-tile info-tile">
+
+                        <header class="info-tile__header">
+                            <h3 class="info-tile__header-title">Сообщения</h3>
+                        </header><!--info tile header-->
+
+                        <div class="info-tile__main">
+
+                            {{> message-box }}
+
+                        </div><!--info tile main-->
+
+                    </article><!--info tile-->
+
+                    <article class="dashboard__info-tile info-tile">
+
+                        <header class="info-tile__header">
+                            <h3 class="info-tile__header-title">Рейтинг</h3>
+                            <a href="#" class="info-tile__header-link">
+                                <span class="info-tile__header-link-text">Смотреть все</span>
+                                <i class="info-tile__header-link-icon icon--arrow-right"></i>
+                            </a>
+                        </header><!--info tile header-->
+
+                        <div class="info-tile__main">
+
+                            {{> rating-graph }}
+
+                        </div><!--info tile main-->
+
+                    </article><!--info tile-->
+
+                    <article class="dashboard__info-tile info-tile">
+
+                        <header class="info-tile__header">
+                            <h3 class="info-tile__header-title">Популярные товары</h3>
+                            <a href="#" class="info-tile__header-link">
+                                <span class="info-tile__header-link-text">Смотреть все</span>
+                                <i class="info-tile__header-link-icon icon--arrow-right"></i>
+                            </a>
+                        </header><!--info tile header-->
+
+                        <div class="info-tile__main info-tile__main--table">
+
+                            {{> dashboard-table }}
+
+                        </div><!--info tile main-->
+
+                    </article><!--info tile-->
+
+                </div><!--dashboard col-->
+
+                <div class="dashboard__col">
+
+                    <article class="dashboard__info-tile info-tile">
+
+                        <header class="info-tile__header">
+                            <h3 class="info-tile__header-title">ЭлектроДом</h3>
+                        </header><!--info tile header-->
+
+                        <div class="info-tile__main">
+
+                            {{> dashboard-account }}
+
+                        </div><!--info tile main-->
+
+                    </article><!--info tile-->
+
+                    <article class="dashboard__info-tile info-tile">
+
+                        <header class="info-tile__header">
+                            <h3 class="info-tile__header-title">
+                                Баланс магазина
+                                <a class="info-msg-toggle info-tile__header-msg-toggle" href="#">
+                                    <i class="icon--info-circled info-msg-toggle__icon"></i>
+                                    <span class="info-msg-toggle__text">info</span>
+                                </a>
+                            </h3>
+                            <a href="#" class="info-tile__header-link">
+                                <span class="info-tile__header-link-text">Все транзакции</span>
+                                <i class="info-tile__header-link-icon icon--arrow-right"></i>
+                            </a>
+                        </header><!--info tile header-->
+
+                        <div class="info-tile__main">
+
+                            {{> dashboard-balance }}
+
+                        </div><!--info tile main-->
+
+                    </article><!--info tile-->
+
+                    <article class="dashboard__info-tile info-tile">
+
+                        <header class="info-tile__header">
+                            <h3 class="info-tile__header-title">
+                                Отзывы
+                            </h3>
+                        </header><!--info tile header-->
+
+                        <div class="info-tile__main">
+
+                            {{> message-box-comments }}
+
+                        </div><!--info tile main-->
+
+                    </article><!--info tile-->
+
+                    <article class="dashboard__info-tile info-tile">
+
+                        <header class="info-tile__header">
+                            <h3 class="info-tile__header-title">Подключение бесплатной доставки Укрпочты</h3>
+                        </header><!--info tile header-->
+
+                        <div class="info-tile__main">
+
+                            {{> dashboard-delivery }}
+
+                        </div><!--info tile main-->
+
+                    </article><!--info tile-->
+
+                    <article class="dashboard__info-tile info-tile">
+
+                        <header class="info-tile__header">
+                            <h3 class="info-tile__header-title">Новости</h3>
+                        </header><!--info tile header-->
+
+                        <div class="info-tile__main info-tile__main--news">
+
+                            {{> news-list }}
+
+                        </div><!--info tile main-->
+
+                    </article><!--info tile-->
+
+                </div><!--dashboard col-->
+
+            </section><!--dashboard-->
+
+        </div>
+    </div><!--main content-->
+
+</main><!--page main-->
