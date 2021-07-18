@@ -95,14 +95,16 @@ $(document).ready(function () {
             const togglers = accordionWrapper.find('.accordion__toggle');
 
             togglers.click((e) => {
-                const sub = $(e.target).next('.accordion__sub');
+                if($(e.target).closest('.accordion__toggle').length || $(e.target) === $(e.currentTarget)){
+                    const sub = $(e.currentTarget).next('.accordion__sub');
 
-                if(sub.length && sub.is(':hidden')){
-                    $(e.target).addClass('accordion__toggle--active');
-                    siteJS.helpers.elemSlideDown(sub, 'accordion__sub--active');
-                } else {
-                    $(e.target).removeClass('accordion__toggle--active');
-                    siteJS.helpers.elemSlideUp(sub, 'accordion__sub--active');
+                    if(sub.length && sub.is(':hidden')){
+                        $(e.currentTarget).addClass('accordion__toggle--active');
+                        siteJS.helpers.elemSlideDown(sub, 'accordion__sub--active');
+                    } else {
+                        $(e.currentTarget).removeClass('accordion__toggle--active');
+                        siteJS.helpers.elemSlideUp(sub, 'accordion__sub--active');
+                    }
                 }
             })
         },
