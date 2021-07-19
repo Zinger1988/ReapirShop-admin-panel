@@ -33,6 +33,61 @@ $(document).ready(function () {
             this.nav();
             this.table();
             this.filters();
+            this.modal();
+            this.fileAdd();
+        },
+        fileAdd() {
+            const wrapper = $('.add-file');
+
+            wrapper.each(function () {
+
+                const inputFile = $(this).find('.add-file__input');
+                const addFileBtn = $(this).find('.add-file__btn');
+                const fileListOutput = $(this).find('.add-file__list');
+                const reset = $(this).find('.add-file__clear');
+
+                reset.click(() => {
+                    inputFile.value = "";
+                    fileListOutput
+                        .removeClass('active')
+                        .find('.add-file__list-item, .add-file__error')
+                        .remove();
+                })
+
+                addFileBtn.click(() => inputFile.click());
+
+                inputFile.change(function () {
+
+                    inputFile.value = "";
+                    fileListOutput.find('.add-file__list-item, .add-file__error').remove();
+                    reset.removeClass('hidden');
+
+                    const filesArr = Array.from(inputFile.get(0).files);
+                    const fragment = document.createDocumentFragment();
+
+                    const filesSize = filesArr.reduce((acc, {size}) => {
+                        return acc + size
+                    }, 0)
+
+                    if(filesSize > 5120000){
+                        reset.addClass('hidden');
+                        fileListOutput
+                            .addClass('active')
+                            .append('<div class="add-file__error">File is too big</div>');
+                        inputFile.value = "";
+                        return;
+                    }
+
+                    filesArr.forEach(({name}) => {
+                        $(fragment).append(`<div class="add-file__list-item">${name}</div>`);
+                    })
+
+                    if(inputFile.val()){
+                        fileListOutput.prepend(fragment);
+                        fileListOutput.addClass('active');
+                    }
+                })
+            });
         },
         filters(){
             const filterBtn = $('.content-head__filter-btn, .close-filter-panel');
@@ -128,6 +183,22 @@ $(document).ready(function () {
                     }
                 }
             })
+        },
+        modal(){
+            const modalBtn = $('[data-modal-id]');
+            const modal = $('.modal');
+
+            modalBtn.click(function (e) {
+                e.preventDefault();
+                const modalTarget = '#' + $(this).data('modalId');
+                siteJS.helpers.elemFadeIn(modalTarget, 'active');
+            });
+
+            modal.click(function (e) {
+                if($(e.target).hasClass('close-modal') || $(e.target).closest('.close-modal').not('.modal').length){
+                    siteJS.helpers.elemFadeOut($(this), 'active');
+                }
+            });
         },
         helpers: {
             elemSlideUp(elem, removeClass = '', durationTime = 200){

@@ -17,6 +17,10 @@
     }
   }
 
+  &__input-text{
+    width: 100%;
+  }
+
   &--collapsed{
 
     #{$this}__row{
@@ -178,9 +182,15 @@
       }
 
       &--mark{
+        width: 5.2rem;
+
         .checkbox-radio__label{
           display: none;
         }
+      }
+
+      &--photo{
+        width: 7.4rem;
       }
 
       #{$this}__product-photo{

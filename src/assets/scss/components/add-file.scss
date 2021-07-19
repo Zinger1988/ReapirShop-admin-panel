@@ -1,0 +1,89 @@
+.add-file{
+  background-color: #F2F5F4;
+  padding: 2rem;
+  border-radius: 6px;
+
+  &__input{
+    display: none;
+  }
+
+  &__btn{
+    width: 100%;
+    white-space: nowrap;
+  }
+
+  &__desc{
+    margin-bottom: 1rem;
+  }
+
+  &__list{
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px dotted rgba(#707070, .4);
+    display: none;
+
+    &.active{
+      display: block;
+    }
+  }
+
+  &__list-item,
+  &__clear{
+    display: block;
+    margin: 0 0 1rem 0;
+    font-size: 1.3rem;
+    line-height: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    padding: .75rem 1.5rem;
+    border-radius: 4px;
+  }
+
+  &__list-item{
+    box-shadow: inset 0 0 0 2px rgba(#DADCDB, .65);
+
+    &::before{
+      content: "\e809";
+      font: 1.4rem "Fontello";
+      margin-right: .75rem;
+      color: $mountainMeadow;
+    }
+  }
+
+  &__clear{
+    background-color: darken($alizarinCrimson, 20%);
+    color: $white;
+    cursor: pointer;
+    width: auto;
+    display: inline-block;
+    @include animate(background-color);
+
+    &::before{
+      content: "\e800";
+      font: 1.2rem "Fontello";
+      margin-right: .5rem;
+      color: $white;
+    }
+
+    &:hover{
+      background-color: darken($alizarinCrimson, 10%);
+    }
+
+    &.hidden{
+      display: none;
+    }
+  }
+
+  &__error{
+    font-weight: 700;
+
+    &::before{
+      color: #E24040;
+      content: "\e836";
+      font: 1.6rem "Fontello";
+      margin-right: .75rem;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+---
+layout: default
+title: Admin-panel
+---
+
+<main class="main page__main">
+
+    {{> sidebar }}
+
+    <div class="main__content content">
+        <div class="container">
+
+            <div class="crumbs content__crumbs">
+                <ul class="crumbs__list">
+                    <li class="crumbs__list-item">
+                        <a class="crumbs__list-link" href="#">Главная</a>
+                    </li>
+                    <li class="crumbs__list-item">
+                        <span class="crumbs__list-current">Заголовок</span>
+                    </li>
+                </ul>
+            </div><!-- crumbs -->
+
+            <div class="content-wrapper content__content-wrapper">
+
+                <div class="content-wrapper__content-head content-head">
+                    <h1 class="content-head__title">Заголовок 1</h1>
+                </div><!--content head-->
+
+                <div class="tabs content-wrapper__tabs">
+                    <a href="#" class="tabs__item">Заголовок таба 1</a>
+                    <a href="#" class="tabs__item tabs__item--active">Заголовок таба 2</a>
+                    <a href="#" class="tabs__item">Заголовок таба 3</a>
+                    <a href="#" class="tabs__item">Заголовок таба 4</a>
+                    <a href="#" class="tabs__item">Заголовок таба 5</a>
+                </div>
+
+                <div class="content-wrapper__body">
+
+                    <div class="control-bar control-bar--text-right content-wrapper__control-bar">
+                        <button class="btn btn--style--blue btn--size--sm control-bar__btn control-bar__btn--mr-auto" data-modal-id="modal-add-photo">Добавить фото</button>
+                        <button class="btn btn--style--blue btn--size--sm control-bar__btn">Сохранить изменения</button>
+                        <button class="btn btn--style--outline-blue btn--size--sm control-bar__btn">Удалить выбранное</button>
+                    </div><!--item card control bar-->
+
+                    <table class="regular-table content-wrapper__regular-table" data-table-breakpoint="1340px">
+                        {{> photo-table }}
+                    </table><!--regular table-->
+
+                </div><!--content wrapper body-->
+
+            </div><!--content wrapper-->
+
+        </div>
+    </div><!--main content-->
+
+</main><!--page main-->

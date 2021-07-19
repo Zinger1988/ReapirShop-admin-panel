@@ -56,6 +56,17 @@
     }
   }
 
+  &--style--red{
+    color: $white;
+    background-color: $alizarinCrimson;
+    box-shadow: 0 2px 8px rgba(224,33,33,.4);
+    @include animate(background-color);
+
+    &:hover{
+      background-color: darken($alizarinCrimson, 10%);
+    }
+  }
+
   &--style--green{
     color: $white;
     background-color: $mountainMeadow;

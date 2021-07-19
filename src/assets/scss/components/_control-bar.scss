@@ -6,11 +6,21 @@
   grid-gap: .5rem;
   border: 1px solid rgba($dodgerBlue, .1);
 
+  &__btn{
+
+    &--mr-auto{
+      @include media(">=sm"){
+        margin-right: auto;
+      }
+    }
+  }
+
   @include media(">=sm"){
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
 
     &--text-right{
-      text-align: right;
+      justify-content: flex-end;
     }
   }
 }
