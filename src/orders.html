@@ -25,7 +25,7 @@ title: Admin-panel
 
                 <div class="content-wrapper__content-head content-head">
 
-                    <h2 class="content-head__title">Список заказов</h2>
+                    <h1 class="content-head__title">Список заказов</h1>
 
                     <div class="content-head__settings">
 
@@ -70,7 +70,7 @@ title: Admin-panel
 
                 </div><!--content head-->
 
-                <div class="content-wrapper__body content-wrapper__body--table">
+                <div class="content-wrapper__body">
 
                     <div class="active-filters content-wrapper__active-filters">
 
@@ -92,7 +92,19 @@ title: Admin-panel
 
                     </div><!--active filters-->
 
-                    {{> regular-table }}
+                    <div class="control-bar content-wrapper__control-bar">
+                        <button class="btn btn--style--outline-blue btn--size--sm control-bar__btn">Добавить заказ</button>
+                        <button class="btn btn--style--outline-blue btn--size--sm control-bar__btn">Удалить отмеченное</button>
+                    </div>
+
+                    <table class="regular-table regular-table--expaned content-wrapper__regular-table" data-table-breakpoint="1340px">
+                        {{> regular-table }}
+                    </table><!--regular table-->
+
+                    <div class="control-bar content-wrapper__control-bar">
+                        <button class="btn btn--style--outline-blue btn--size--sm control-bar__btn">Добавить заказ</button>
+                        <button class="btn btn--style--outline-blue btn--size--sm control-bar__btn">Удалить отмеченное</button>
+                    </div>
 
                 </div><!--content wrapper body-->
 

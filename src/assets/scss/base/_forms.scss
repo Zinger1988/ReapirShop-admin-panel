@@ -17,11 +17,20 @@ fieldset {
   border-radius: 4px;
   outline: none;
   display: block;
-  @include animate(border);
+  background-color: rgba($white,.4);
+  @include animate(border background-color);
 
   @include media(">=md"){
     padding: 1.1rem 1.25rem;
     font-size: 1.4rem;
+  }
+
+  &--sm{
+    padding: .5rem .75rem;
+
+    @include media(">=md"){
+      padding: .6rem .8rem;
+    }
   }
 
   &::-webkit-inner-spin-button,
@@ -39,6 +48,7 @@ fieldset {
   &:focus {
     border-color: #888;
     outline: none;
+    background-color: $white;
 
     @include placeholder {
       opacity: 0;

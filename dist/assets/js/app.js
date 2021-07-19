@@ -50,8 +50,29 @@ $(document).ready(function () {
         },
         table() {
             const tables = $('.regular-table');
+            const tableInputs = $('.regular-table__cell--mark .checkbox-radio__input')
+
+            function markTableRows(checkboxElem, parentSelector, activeClass){
+                if(checkboxElem.prop('checked')){
+                    checkboxElem.closest(parentSelector).addClass(activeClass);
+                } else {
+                    checkboxElem.closest(parentSelector).removeClass(activeClass);
+                }
+            }
+
+            tableInputs.each(function () {
+                markTableRows($(this), '.regular-table__row', 'regular-table__row--marked');
+            })
+
+            tableInputs.on('click', function () {
+                    markTableRows($(this), '.regular-table__row', 'regular-table__row--marked');
+                });
 
             tables.each(function () {
+
+                const markCheckbox = $(this).find('.regular-table__cell--mark .checkbox-radio__input');
+                markCheckbox.on('click', markTableRows.bind(null, $(this), '.regular-table__row', 'regular-table__row--marked'))
+
                 const breakpoint = $(this).attr('data-table-breakpoint');
                 if(window.matchMedia(`(min-width: ${breakpoint})`).matches){
                     $(this).addClass('regular-table--expaned')

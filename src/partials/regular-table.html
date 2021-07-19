@@ -1,1458 +1,722 @@
-<table class="regular-table regular-table--expaned" data-table-breakpoint="1340px">
+<tr class="regular-table__row regular-table__row--head">
+    <th class="regular-table__cell regular-table__cell--head">
+        <div class="regular-table__cell-inner">
+            <div class="regular-table__cell-content"></div>
+        </div>
+    </th>
+    <th class="regular-table__cell regular-table__cell--head">
+        <div class="regular-table__cell-inner">
+            <div class="regular-table__cell-content">Номер заказа</div>
+        </div>
+    </th>
+    <th class="regular-table__cell regular-table__cell--head">
+        <div class="regular-table__cell-inner">
+            <div class="regular-table__cell-content">Фото</div>
+        </div>
+    </th>
+    <th class="regular-table__cell regular-table__cell--head">
+        <div class="regular-table__cell-inner">
+            <div class="regular-table__cell-content">Дата создания</div>
+        </div>
+    </th>
+    <th class="regular-table__cell regular-table__cell--head">
+        <div class="regular-table__cell-inner">
+            <div class="regular-table__cell-content">Дата выдачи</div>
+        </div>
+    </th>
+    <th class="regular-table__cell regular-table__cell--head">
+        <div class="regular-table__cell-inner">
+            <div class="regular-table__cell-content">Автор</div>
+        </div>
+    </th>
+    <th class="regular-table__cell regular-table__cell--head">
+        <div class="regular-table__cell-inner">
+            <div class="regular-table__cell-content">Сумма, грн</div>
+        </div>
+    </th>
+    <th class="regular-table__cell regular-table__cell--head">
+        <div class="regular-table__cell-inner">
+            <div class="regular-table__cell-content">Баланс</div>
+        </div>
+    </th>
+    <th class="regular-table__cell regular-table__cell--head">
+        <div class="regular-table__cell-inner">
+            <div class="regular-table__cell-content">Статус</div>
+        </div>
+    </th>
+    <th class="regular-table__cell regular-table__cell--head">
+        <div class="regular-table__cell-inner">
+            <div class="regular-table__cell-content">Экспортировать</div>
+        </div>
+    </th>
+</tr><!--regular table row-->
 
-    <tr class="regular-table__row regular-table__row--head">
-        <th class="regular-table__cell regular-table__cell--head">
-            <div class="regular-table__cell-inner">
-                <div class="regular-table__cell-content">Номер заказа</div>
+<tr class="regular-table__row">
+    <td class="regular-table__cell regular-table__cell--mark">
+        <div class="regular-table__cell-inner">
+            <div class="regular-table__cell-content">
+                <label class="checkbox-radio">
+                    <input class="checkbox-radio__input" type="checkbox" name="" value="" checked>
+                    <span class="checkbox-radio__toggler"></span>
+                    <span class="checkbox-radio__label">Отметить</span>
+                </label>
             </div>
-        </th>
-        <th class="regular-table__cell regular-table__cell--head">
-            <div class="regular-table__cell-inner">
-                <div class="regular-table__cell-content">Дата создания</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
+            <div class="regular-table__cell-content">2766719</div>
+        </div>
+    </td>
+    <td class="regular-table__cell regular-table__cell--photo">
+        <div class="regular-table__cell-inner" data-cell-name="Фото">
+            <div class="regular-table__cell-content">
+                <img src="assets/img/products/01.jpg" alt="image" class="regular-table__product-photo">
             </div>
-        </th>
-        <th class="regular-table__cell regular-table__cell--head">
-            <div class="regular-table__cell-inner">
-                <div class="regular-table__cell-content">Дата выдачи</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Дата создания">
+            <div class="regular-table__cell-content nowrap"><a href="#">02.03.2021</a></div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
+            <div class="regular-table__cell-content nowrap">02.03.2021</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Автор">
+            <div class="regular-table__cell-content">Константин Кириченко</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
+            <div class="regular-table__cell-content">
+                <input class="input-text input-text--sm form-row__control form-row__control" type="text" value="624.00">
             </div>
-        </th>
-        <th class="regular-table__cell regular-table__cell--head">
-            <div class="regular-table__cell-inner">
-                <div class="regular-table__cell-content">Автор</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Баланс">
+            <div class="regular-table__cell-content nowrap">2 140.25</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Статус">
+            <div class="regular-table__cell-content">Разрешен к выдаче; Выдан; Полностью оплачен;</div>
+        </div>
+    </td>
+    <td class="regular-table__cell regular-table__cell--controls">
+        <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
+            <div class="regular-table__cell-content">
+                <button class="btn btn--style--green btn--size--sm">
+                    <i class="btn__icon icon--excel"></i> Excel
+                </button>
             </div>
-        </th>
-        <th class="regular-table__cell regular-table__cell--head">
-            <div class="regular-table__cell-inner">
-                <div class="regular-table__cell-content">Сумма, грн</div>
-            </div>
-        </th>
-        <th class="regular-table__cell regular-table__cell--head">
-            <div class="regular-table__cell-inner">
-                <div class="regular-table__cell-content">Баланс</div>
-            </div>
-        </th>
-        <th class="regular-table__cell regular-table__cell--head">
-            <div class="regular-table__cell-inner">
-                <div class="regular-table__cell-content">Статус</div>
-            </div>
-        </th>
-        <th class="regular-table__cell regular-table__cell--head">
-            <div class="regular-table__cell-inner">
-                <div class="regular-table__cell-content">Экспортировать</div>
-            </div>
-        </th>
-    </tr><!--regular table row-->
+        </div>
+    </td>
+</tr><!--regular table row-->
 
-    <tr class="regular-table__row">
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
-                <div class="regular-table__cell-content">2766719</div>
+<tr class="regular-table__row">
+    <td class="regular-table__cell regular-table__cell--mark">
+        <div class="regular-table__cell-inner">
+            <div class="regular-table__cell-content">
+                <label class="checkbox-radio">
+                    <input class="checkbox-radio__input" type="checkbox" name="" value="">
+                    <span class="checkbox-radio__toggler"></span>
+                    <span class="checkbox-radio__label">Отметить</span>
+                </label>
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата создания">
-                <div class="regular-table__cell-content"><a href="#">02.03.2021</a></div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
+            <div class="regular-table__cell-content">123456</div>
+        </div>
+    </td>
+    <td class="regular-table__cell regular-table__cell--photo">
+        <div class="regular-table__cell-inner" data-cell-name="Фото">
+            <div class="regular-table__cell-content">
+                <img src="assets/img/products/02.jpg" alt="image" class="regular-table__product-photo">
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
-                <div class="regular-table__cell-content">02.03.2021</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Дата создания">
+            <div class="regular-table__cell-content nowrap"><a href="#">03.03.2021</a></div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
+            <div class="regular-table__cell-content nowrap">03.03.2021</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Автор">
+            <div class="regular-table__cell-content">Кирилл Дмитриевский</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
+            <div class="regular-table__cell-content">
+                <input class="input-text input-text--sm form-row__control form-row__control" type="text" value="321.00">
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Автор">
-                <div class="regular-table__cell-content">Константин Кириченко</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Баланс">
+            <div class="regular-table__cell-content nowrap">3 355.25</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Статус">
+            <div class="regular-table__cell-content">Разрешен к выдаче;</div>
+        </div>
+    </td>
+    <td class="regular-table__cell regular-table__cell--controls">
+        <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
+            <div class="regular-table__cell-content">
+                <button class="btn btn--style--green btn--size--sm">
+                    <i class="btn__icon icon--excel"></i> Excel
+                </button>
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
-                <div class="regular-table__cell-content">1 166.00</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Баланс">
-                <div class="regular-table__cell-content">2 140.25</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Статус">
-                <div class="regular-table__cell-content">Разрешен к выдаче; Выдан; Полностью оплачен;</div>
-            </div>
-        </td>
-        <td class="regular-table__cell regular-table__cell--controls">
-            <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
-                <div class="regular-table__cell-content">
-                    <button class="btn btn--style--green btn--size--sm">
-                        <i class="btn__icon icon--excel"></i> Excel
-                    </button>
-                </div>
-            </div>
-        </td>
-    </tr><!--regular table row-->
+        </div>
+    </td>
+</tr><!--regular table row-->
 
-    <tr class="regular-table__row">
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
-                <div class="regular-table__cell-content">3564456</div>
+<tr class="regular-table__row">
+    <td class="regular-table__cell regular-table__cell--mark">
+        <div class="regular-table__cell-inner">
+            <div class="regular-table__cell-content">
+                <label class="checkbox-radio">
+                    <input class="checkbox-radio__input" type="checkbox" name="" value="">
+                    <span class="checkbox-radio__toggler"></span>
+                    <span class="checkbox-radio__label">Отметить</span>
+                </label>
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата создания">
-                <div class="regular-table__cell-content"><a href="#">01.03.2021</a></div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
+            <div class="regular-table__cell-content">467226</div>
+        </div>
+    </td>
+    <td class="regular-table__cell regular-table__cell--photo">
+        <div class="regular-table__cell-inner" data-cell-name="Фото">
+            <div class="regular-table__cell-content">
+                <img src="assets/img/products/03.jpg" alt="image" class="regular-table__product-photo">
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
-                <div class="regular-table__cell-content">01.03.2021</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Дата создания">
+            <div class="regular-table__cell-content nowrap"><a href="#">04.03.2021</a></div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
+            <div class="regular-table__cell-content nowrap">04.03.2021</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Автор">
+            <div class="regular-table__cell-content">Евгений Подгорный</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
+            <div class="regular-table__cell-content">
+                <input class="input-text input-text--sm form-row__control form-row__control" type="text" value="215.00">
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Автор">
-                <div class="regular-table__cell-content">Константин Кириченко</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Баланс">
+            <div class="regular-table__cell-content nowrap">99 321.30</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Статус">
+            <div class="regular-table__cell-content">Разрешен к выдаче; Выдан;</div>
+        </div>
+    </td>
+    <td class="regular-table__cell regular-table__cell--controls">
+        <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
+            <div class="regular-table__cell-content">
+                <button class="btn btn--style--green btn--size--sm">
+                    <i class="btn__icon icon--excel"></i> Excel
+                </button>
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
-                <div class="regular-table__cell-content">829.00</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Баланс">
-                <div class="regular-table__cell-content">2 140.25</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Статус">
-                <div class="regular-table__cell-content">Разрешен к выдаче; Выдан; Полностью оплачен;</div>
-            </div>
-        </td>
-        <td class="regular-table__cell regular-table__cell--controls">
-            <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
-                <div class="regular-table__cell-content">
-                    <button class="btn btn--style--green btn--size--sm">
-                        <i class="btn__icon icon--excel"></i> Excel
-                    </button>
-                </div>
-            </div>
-        </td>
-    </tr><!--regular table row-->
+        </div>
+    </td>
+</tr><!--regular table row-->
 
-    <tr class="regular-table__row">
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
-                <div class="regular-table__cell-content">2132334</div>
+<tr class="regular-table__row">
+    <td class="regular-table__cell regular-table__cell--mark">
+        <div class="regular-table__cell-inner">
+            <div class="regular-table__cell-content">
+                <label class="checkbox-radio">
+                    <input class="checkbox-radio__input" type="checkbox" name="" value="">
+                    <span class="checkbox-radio__toggler"></span>
+                    <span class="checkbox-radio__label">Отметить</span>
+                </label>
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата создания">
-                <div class="regular-table__cell-content"><a href="#">28.02.2021</a></div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
+            <div class="regular-table__cell-content">467226</div>
+        </div>
+    </td>
+    <td class="regular-table__cell regular-table__cell--photo">
+        <div class="regular-table__cell-inner" data-cell-name="Фото">
+            <div class="regular-table__cell-content">
+                <img src="assets/img/products/04.jpg" alt="image" class="regular-table__product-photo">
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
-                <div class="regular-table__cell-content">01.03.2021</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Дата создания">
+            <div class="regular-table__cell-content nowrap"><a href="#">06.03.2021</a></div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
+            <div class="regular-table__cell-content nowrap">07.03.2021</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Автор">
+            <div class="regular-table__cell-content">Роман Кулач</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
+            <div class="regular-table__cell-content">
+                <input class="input-text input-text--sm form-row__control form-row__control" type="text" value="321.00">
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Автор">
-                <div class="regular-table__cell-content">Константин Кириченко</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Баланс">
+            <div class="regular-table__cell-content nowrap">341.76</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Статус">
+            <div class="regular-table__cell-content">Разрешен к выдаче; Полностью оплачен;</div>
+        </div>
+    </td>
+    <td class="regular-table__cell regular-table__cell--controls">
+        <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
+            <div class="regular-table__cell-content">
+                <button class="btn btn--style--green btn--size--sm">
+                    <i class="btn__icon icon--excel"></i> Excel
+                </button>
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
-                <div class="regular-table__cell-content">1 224.00</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Баланс">
-                <div class="regular-table__cell-content">2 140.25</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Статус">
-                <div class="regular-table__cell-content">Разрешен к выдаче; Выдан;</div>
-            </div>
-        </td>
-        <td class="regular-table__cell regular-table__cell--controls">
-            <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
-                <div class="regular-table__cell-content">
-                    <button class="btn btn--style--green btn--size--sm">
-                        <i class="btn__icon icon--excel"></i> Excel
-                    </button>
-                </div>
-            </div>
-        </td>
-    </tr><!--regular table row-->
+        </div>
+    </td>
+</tr><!--regular table row-->
 
-    <tr class="regular-table__row">
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
-                <div class="regular-table__cell-content">1235567</div>
+<tr class="regular-table__row">
+    <td class="regular-table__cell regular-table__cell--mark">
+        <div class="regular-table__cell-inner">
+            <div class="regular-table__cell-content">
+                <label class="checkbox-radio">
+                    <input class="checkbox-radio__input" type="checkbox" name="" value="">
+                    <span class="checkbox-radio__toggler"></span>
+                    <span class="checkbox-radio__label">Отметить</span>
+                </label>
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата создания">
-                <div class="regular-table__cell-content"><a href="#">28.02.2021</a></div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
+            <div class="regular-table__cell-content">637990</div>
+        </div>
+    </td>
+    <td class="regular-table__cell regular-table__cell--photo">
+        <div class="regular-table__cell-inner" data-cell-name="Фото">
+            <div class="regular-table__cell-content">
+                <img src="assets/img/products/05.jpg" alt="image" class="regular-table__product-photo">
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
-                <div class="regular-table__cell-content">01.03.2021</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Дата создания">
+            <div class="regular-table__cell-content nowrap"><a href="#">08.03.2021</a></div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
+            <div class="regular-table__cell-content nowrap">08.03.2021</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Автор">
+            <div class="regular-table__cell-content">Кристина Бузина</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
+            <div class="regular-table__cell-content">
+                <input class="input-text input-text--sm form-row__control form-row__control" type="text" value="1 389.00">
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Автор">
-                <div class="regular-table__cell-content">Константин Кириченко</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Баланс">
+            <div class="regular-table__cell-content nowrap">341.76</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Статус">
+            <div class="regular-table__cell-content">Разрешен к выдаче; Полностью оплачен;</div>
+        </div>
+    </td>
+    <td class="regular-table__cell regular-table__cell--controls">
+        <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
+            <div class="regular-table__cell-content">
+                <button class="btn btn--style--green btn--size--sm">
+                    <i class="btn__icon icon--excel"></i> Excel
+                </button>
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
-                <div class="regular-table__cell-content">431.00</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Баланс">
-                <div class="regular-table__cell-content">2 140.25</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Статус">
-                <div class="regular-table__cell-content">Разрешен к выдаче;</div>
-            </div>
-        </td>
-        <td class="regular-table__cell regular-table__cell--controls">
-            <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
-                <div class="regular-table__cell-content">
-                    <button class="btn btn--style--green btn--size--sm">
-                        <i class="btn__icon icon--excel"></i> Excel
-                    </button>
-                </div>
-            </div>
-        </td>
-    </tr><!--regular table row-->
+        </div>
+    </td>
+</tr><!--regular table row-->
 
-    <tr class="regular-table__row">
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
-                <div class="regular-table__cell-content">2766719</div>
+<tr class="regular-table__row">
+    <td class="regular-table__cell regular-table__cell--mark">
+        <div class="regular-table__cell-inner">
+            <div class="regular-table__cell-content">
+                <label class="checkbox-radio">
+                    <input class="checkbox-radio__input" type="checkbox" name="" value="">
+                    <span class="checkbox-radio__toggler"></span>
+                    <span class="checkbox-radio__label">Отметить</span>
+                </label>
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата создания">
-                <div class="regular-table__cell-content"><a href="#">02.03.2021</a></div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
+            <div class="regular-table__cell-content">2766719</div>
+        </div>
+    </td>
+    <td class="regular-table__cell regular-table__cell--photo">
+        <div class="regular-table__cell-inner" data-cell-name="Фото">
+            <div class="regular-table__cell-content">
+                <img src="assets/img/products/06.jpg" alt="image" class="regular-table__product-photo">
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
-                <div class="regular-table__cell-content">02.03.2021</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Дата создания">
+            <div class="regular-table__cell-content nowrap"><a href="#">02.03.2021</a></div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
+            <div class="regular-table__cell-content nowrap">02.03.2021</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Автор">
+            <div class="regular-table__cell-content">Константин Кириченко</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
+            <div class="regular-table__cell-content">
+                <input class="input-text input-text--sm form-row__control form-row__control" type="text" value="624.00">
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Автор">
-                <div class="regular-table__cell-content">Константин Кириченко</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Баланс">
+            <div class="regular-table__cell-content nowrap">2 140.25</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Статус">
+            <div class="regular-table__cell-content">Разрешен к выдаче; Выдан; Полностью оплачен;</div>
+        </div>
+    </td>
+    <td class="regular-table__cell regular-table__cell--controls">
+        <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
+            <div class="regular-table__cell-content">
+                <button class="btn btn--style--green btn--size--sm">
+                    <i class="btn__icon icon--excel"></i> Excel
+                </button>
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
-                <div class="regular-table__cell-content">1 166.00</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Баланс">
-                <div class="regular-table__cell-content">2 140.25</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Статус">
-                <div class="regular-table__cell-content">Разрешен к выдаче; Выдан; Полностью оплачен;</div>
-            </div>
-        </td>
-        <td class="regular-table__cell regular-table__cell--controls">
-            <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
-                <div class="regular-table__cell-content">
-                    <button class="btn btn--style--green btn--size--sm">
-                        <i class="btn__icon icon--excel"></i> Excel
-                    </button>
-                </div>
-            </div>
-        </td>
-    </tr><!--regular table row-->
+        </div>
+    </td>
+</tr><!--regular table row-->
 
-    <tr class="regular-table__row">
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
-                <div class="regular-table__cell-content">3564456</div>
+<tr class="regular-table__row">
+    <td class="regular-table__cell regular-table__cell--mark">
+        <div class="regular-table__cell-inner">
+            <div class="regular-table__cell-content">
+                <label class="checkbox-radio">
+                    <input class="checkbox-radio__input" type="checkbox" name="" value="">
+                    <span class="checkbox-radio__toggler"></span>
+                    <span class="checkbox-radio__label">Отметить</span>
+                </label>
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата создания">
-                <div class="regular-table__cell-content"><a href="#">01.03.2021</a></div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
+            <div class="regular-table__cell-content">123456</div>
+        </div>
+    </td>
+    <td class="regular-table__cell regular-table__cell--photo">
+        <div class="regular-table__cell-inner" data-cell-name="Фото">
+            <div class="regular-table__cell-content">
+                <img src="assets/img/products/07.jpg" alt="image" class="regular-table__product-photo">
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
-                <div class="regular-table__cell-content">01.03.2021</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Дата создания">
+            <div class="regular-table__cell-content nowrap"><a href="#">03.03.2021</a></div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
+            <div class="regular-table__cell-content nowrap">03.03.2021</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Автор">
+            <div class="regular-table__cell-content">Кирилл Дмитриевский</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
+            <div class="regular-table__cell-content">
+                <input class="input-text input-text--sm form-row__control form-row__control" type="text" value="321.00">
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Автор">
-                <div class="regular-table__cell-content">Константин Кириченко</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Баланс">
+            <div class="regular-table__cell-content nowrap">3 355.25</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Статус">
+            <div class="regular-table__cell-content">Разрешен к выдаче;</div>
+        </div>
+    </td>
+    <td class="regular-table__cell regular-table__cell--controls">
+        <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
+            <div class="regular-table__cell-content">
+                <button class="btn btn--style--green btn--size--sm">
+                    <i class="btn__icon icon--excel"></i> Excel
+                </button>
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
-                <div class="regular-table__cell-content">829.00</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Баланс">
-                <div class="regular-table__cell-content">2 140.25</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Статус">
-                <div class="regular-table__cell-content">Разрешен к выдаче; Выдан; Полностью оплачен;</div>
-            </div>
-        </td>
-        <td class="regular-table__cell regular-table__cell--controls">
-            <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
-                <div class="regular-table__cell-content">
-                    <button class="btn btn--style--green btn--size--sm">
-                        <i class="btn__icon icon--excel"></i> Excel
-                    </button>
-                </div>
-            </div>
-        </td>
-    </tr><!--regular table row-->
+        </div>
+    </td>
+</tr><!--regular table row-->
 
-    <tr class="regular-table__row">
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
-                <div class="regular-table__cell-content">2132334</div>
+<tr class="regular-table__row">
+    <td class="regular-table__cell regular-table__cell--mark">
+        <div class="regular-table__cell-inner">
+            <div class="regular-table__cell-content">
+                <label class="checkbox-radio">
+                    <input class="checkbox-radio__input" type="checkbox" name="" value="">
+                    <span class="checkbox-radio__toggler"></span>
+                    <span class="checkbox-radio__label">Отметить</span>
+                </label>
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата создания">
-                <div class="regular-table__cell-content"><a href="#">28.02.2021</a></div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
+            <div class="regular-table__cell-content">467226</div>
+        </div>
+    </td>
+    <td class="regular-table__cell regular-table__cell--photo">
+        <div class="regular-table__cell-inner" data-cell-name="Фото">
+            <div class="regular-table__cell-content">
+                <img src="assets/img/products/08.jpg" alt="image" class="regular-table__product-photo">
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
-                <div class="regular-table__cell-content">01.03.2021</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Дата создания">
+            <div class="regular-table__cell-content nowrap"><a href="#">04.03.2021</a></div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
+            <div class="regular-table__cell-content nowrap">04.03.2021</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Автор">
+            <div class="regular-table__cell-content">Евгений Подгорный</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
+            <div class="regular-table__cell-content">
+                <input class="input-text input-text--sm form-row__control form-row__control" type="text" value="215.00">
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Автор">
-                <div class="regular-table__cell-content">Константин Кириченко</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Баланс">
+            <div class="regular-table__cell-content nowrap">99 321.30</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Статус">
+            <div class="regular-table__cell-content">Разрешен к выдаче; Выдан;</div>
+        </div>
+    </td>
+    <td class="regular-table__cell regular-table__cell--controls">
+        <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
+            <div class="regular-table__cell-content">
+                <button class="btn btn--style--green btn--size--sm">
+                    <i class="btn__icon icon--excel"></i> Excel
+                </button>
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
-                <div class="regular-table__cell-content">1 224.00</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Баланс">
-                <div class="regular-table__cell-content">2 140.25</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Статус">
-                <div class="regular-table__cell-content">Разрешен к выдаче; Выдан;</div>
-            </div>
-        </td>
-        <td class="regular-table__cell regular-table__cell--controls">
-            <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
-                <div class="regular-table__cell-content">
-                    <button class="btn btn--style--green btn--size--sm">
-                        <i class="btn__icon icon--excel"></i> Excel
-                    </button>
-                </div>
-            </div>
-        </td>
-    </tr><!--regular table row-->
+        </div>
+    </td>
+</tr><!--regular table row-->
 
-    <tr class="regular-table__row">
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
-                <div class="regular-table__cell-content">1235567</div>
+<tr class="regular-table__row">
+    <td class="regular-table__cell regular-table__cell--mark">
+        <div class="regular-table__cell-inner">
+            <div class="regular-table__cell-content">
+                <label class="checkbox-radio">
+                    <input class="checkbox-radio__input" type="checkbox" name="" value="">
+                    <span class="checkbox-radio__toggler"></span>
+                    <span class="checkbox-radio__label">Отметить</span>
+                </label>
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата создания">
-                <div class="regular-table__cell-content"><a href="#">28.02.2021</a></div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
+            <div class="regular-table__cell-content">467226</div>
+        </div>
+    </td>
+    <td class="regular-table__cell regular-table__cell--photo">
+        <div class="regular-table__cell-inner" data-cell-name="Фото">
+            <div class="regular-table__cell-content">
+                <img src="assets/img/products/09.jpg" alt="image" class="regular-table__product-photo">
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
-                <div class="regular-table__cell-content">01.03.2021</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Дата создания">
+            <div class="regular-table__cell-content nowrap"><a href="#">06.03.2021</a></div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
+            <div class="regular-table__cell-content nowrap">07.03.2021</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Автор">
+            <div class="regular-table__cell-content">Роман Кулач</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
+            <div class="regular-table__cell-content">
+                <input class="input-text input-text--sm form-row__control form-row__control" type="text" value="321.00">
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Автор">
-                <div class="regular-table__cell-content">Константин Кириченко</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Баланс">
+            <div class="regular-table__cell-content nowrap">341.76</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Статус">
+            <div class="regular-table__cell-content">Разрешен к выдаче; Полностью оплачен;</div>
+        </div>
+    </td>
+    <td class="regular-table__cell regular-table__cell--controls">
+        <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
+            <div class="regular-table__cell-content">
+                <button class="btn btn--style--green btn--size--sm">
+                    <i class="btn__icon icon--excel"></i> Excel
+                </button>
             </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
-                <div class="regular-table__cell-content">431.00</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Баланс">
-                <div class="regular-table__cell-content">2 140.25</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Статус">
-                <div class="regular-table__cell-content">Разрешен к выдаче;</div>
-            </div>
-        </td>
-        <td class="regular-table__cell regular-table__cell--controls">
-            <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
-                <div class="regular-table__cell-content">
-                    <button class="btn btn--style--green btn--size--sm">
-                        <i class="btn__icon icon--excel"></i> Excel
-                    </button>
-                </div>
-            </div>
-        </td>
-    </tr><!--regular table row-->
+        </div>
+    </td>
+</tr><!--regular table row-->
 
-    <tr class="regular-table__row">
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
-                <div class="regular-table__cell-content">2766719</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата создания">
-                <div class="regular-table__cell-content"><a href="#">02.03.2021</a></div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
-                <div class="regular-table__cell-content">02.03.2021</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Автор">
-                <div class="regular-table__cell-content">Константин Кириченко</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
-                <div class="regular-table__cell-content">1 166.00</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Баланс">
-                <div class="regular-table__cell-content">2 140.25</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Статус">
-                <div class="regular-table__cell-content">Разрешен к выдаче; Выдан; Полностью оплачен;</div>
-            </div>
-        </td>
-        <td class="regular-table__cell regular-table__cell--controls">
-            <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
-                <div class="regular-table__cell-content">
-                    <button class="btn btn--style--green btn--size--sm">
-                        <i class="btn__icon icon--excel"></i> Excel
-                    </button>
-                </div>
-            </div>
-        </td>
-    </tr><!--regular table row-->
-
-    <tr class="regular-table__row">
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
-                <div class="regular-table__cell-content">3564456</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата создания">
-                <div class="regular-table__cell-content"><a href="#">01.03.2021</a></div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
-                <div class="regular-table__cell-content">01.03.2021</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Автор">
-                <div class="regular-table__cell-content">Константин Кириченко</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
-                <div class="regular-table__cell-content">829.00</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Баланс">
-                <div class="regular-table__cell-content">2 140.25</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Статус">
-                <div class="regular-table__cell-content">Разрешен к выдаче; Выдан; Полностью оплачен;</div>
-            </div>
-        </td>
-        <td class="regular-table__cell regular-table__cell--controls">
-            <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
-                <div class="regular-table__cell-content">
-                    <button class="btn btn--style--green btn--size--sm">
-                        <i class="btn__icon icon--excel"></i> Excel
-                    </button>
-                </div>
-            </div>
-        </td>
-    </tr><!--regular table row-->
-
-    <tr class="regular-table__row">
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
-                <div class="regular-table__cell-content">2766719</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата создания">
-                <div class="regular-table__cell-content"><a href="#">02.03.2021</a></div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
-                <div class="regular-table__cell-content">02.03.2021</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Автор">
-                <div class="regular-table__cell-content">Константин Кириченко</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
-                <div class="regular-table__cell-content">1 166.00</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Баланс">
-                <div class="regular-table__cell-content">2 140.25</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Статус">
-                <div class="regular-table__cell-content">Разрешен к выдаче; Выдан; Полностью оплачен;</div>
-            </div>
-        </td>
-        <td class="regular-table__cell regular-table__cell--controls">
-            <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
-                <div class="regular-table__cell-content">
-                    <button class="btn btn--style--green btn--size--sm">
-                        <i class="btn__icon icon--excel"></i> Excel
-                    </button>
-                </div>
-            </div>
-        </td>
-    </tr><!--regular table row-->
-
-    <tr class="regular-table__row">
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
-                <div class="regular-table__cell-content">3564456</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата создания">
-                <div class="regular-table__cell-content"><a href="#">01.03.2021</a></div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
-                <div class="regular-table__cell-content">01.03.2021</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Автор">
-                <div class="regular-table__cell-content">Константин Кириченко</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
-                <div class="regular-table__cell-content">829.00</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Баланс">
-                <div class="regular-table__cell-content">2 140.25</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Статус">
-                <div class="regular-table__cell-content">Разрешен к выдаче; Выдан; Полностью оплачен;</div>
-            </div>
-        </td>
-        <td class="regular-table__cell regular-table__cell--controls">
-            <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
-                <div class="regular-table__cell-content">
-                    <button class="btn btn--style--green btn--size--sm">
-                        <i class="btn__icon icon--excel"></i> Excel
-                    </button>
-                </div>
-            </div>
-        </td>
-    </tr><!--regular table row-->
-
-    <tr class="regular-table__row">
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
-                <div class="regular-table__cell-content">2132334</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата создания">
-                <div class="regular-table__cell-content"><a href="#">28.02.2021</a></div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
-                <div class="regular-table__cell-content">01.03.2021</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Автор">
-                <div class="regular-table__cell-content">Константин Кириченко</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
-                <div class="regular-table__cell-content">1 224.00</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Баланс">
-                <div class="regular-table__cell-content">2 140.25</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Статус">
-                <div class="regular-table__cell-content">Разрешен к выдаче; Выдан;</div>
-            </div>
-        </td>
-        <td class="regular-table__cell regular-table__cell--controls">
-            <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
-                <div class="regular-table__cell-content">
-                    <button class="btn btn--style--green btn--size--sm">
-                        <i class="btn__icon icon--excel"></i> Excel
-                    </button>
-                </div>
-            </div>
-        </td>
-    </tr><!--regular table row-->
-
-    <tr class="regular-table__row">
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
-                <div class="regular-table__cell-content">1235567</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата создания">
-                <div class="regular-table__cell-content"><a href="#">28.02.2021</a></div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
-                <div class="regular-table__cell-content">01.03.2021</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Автор">
-                <div class="regular-table__cell-content">Константин Кириченко</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
-                <div class="regular-table__cell-content">431.00</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Баланс">
-                <div class="regular-table__cell-content">2 140.25</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Статус">
-                <div class="regular-table__cell-content">Разрешен к выдаче;</div>
-            </div>
-        </td>
-        <td class="regular-table__cell regular-table__cell--controls">
-            <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
-                <div class="regular-table__cell-content">
-                    <button class="btn btn--style--green btn--size--sm">
-                        <i class="btn__icon icon--excel"></i> Excel
-                    </button>
-                </div>
-            </div>
-        </td>
-    </tr><!--regular table row-->
-
-    <tr class="regular-table__row">
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
-                <div class="regular-table__cell-content">2766719</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата создания">
-                <div class="regular-table__cell-content"><a href="#">02.03.2021</a></div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
-                <div class="regular-table__cell-content">02.03.2021</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Автор">
-                <div class="regular-table__cell-content">Константин Кириченко</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
-                <div class="regular-table__cell-content">1 166.00</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Баланс">
-                <div class="regular-table__cell-content">2 140.25</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Статус">
-                <div class="regular-table__cell-content">Разрешен к выдаче; Выдан; Полностью оплачен;</div>
-            </div>
-        </td>
-        <td class="regular-table__cell regular-table__cell--controls">
-            <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
-                <div class="regular-table__cell-content">
-                    <button class="btn btn--style--green btn--size--sm">
-                        <i class="btn__icon icon--excel"></i> Excel
-                    </button>
-                </div>
-            </div>
-        </td>
-    </tr><!--regular table row-->
-
-    <tr class="regular-table__row">
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
-                <div class="regular-table__cell-content">3564456</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата создания">
-                <div class="regular-table__cell-content"><a href="#">01.03.2021</a></div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
-                <div class="regular-table__cell-content">01.03.2021</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Автор">
-                <div class="regular-table__cell-content">Константин Кириченко</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
-                <div class="regular-table__cell-content">829.00</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Баланс">
-                <div class="regular-table__cell-content">2 140.25</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Статус">
-                <div class="regular-table__cell-content">Разрешен к выдаче; Выдан; Полностью оплачен;</div>
-            </div>
-        </td>
-        <td class="regular-table__cell regular-table__cell--controls">
-            <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
-                <div class="regular-table__cell-content">
-                    <button class="btn btn--style--green btn--size--sm">
-                        <i class="btn__icon icon--excel"></i> Excel
-                    </button>
-                </div>
-            </div>
-        </td>
-    </tr><!--regular table row-->
-
-    <tr class="regular-table__row">
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
-                <div class="regular-table__cell-content">2132334</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата создания">
-                <div class="regular-table__cell-content"><a href="#">28.02.2021</a></div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
-                <div class="regular-table__cell-content">01.03.2021</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Автор">
-                <div class="regular-table__cell-content">Константин Кириченко</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
-                <div class="regular-table__cell-content">1 224.00</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Баланс">
-                <div class="regular-table__cell-content">2 140.25</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Статус">
-                <div class="regular-table__cell-content">Разрешен к выдаче; Выдан;</div>
-            </div>
-        </td>
-        <td class="regular-table__cell regular-table__cell--controls">
-            <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
-                <div class="regular-table__cell-content">
-                    <button class="btn btn--style--green btn--size--sm">
-                        <i class="btn__icon icon--excel"></i> Excel
-                    </button>
-                </div>
-            </div>
-        </td>
-    </tr><!--regular table row-->
-
-    <tr class="regular-table__row">
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
-                <div class="regular-table__cell-content">1235567</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата создания">
-                <div class="regular-table__cell-content"><a href="#">28.02.2021</a></div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
-                <div class="regular-table__cell-content">01.03.2021</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Автор">
-                <div class="regular-table__cell-content">Константин Кириченко</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
-                <div class="regular-table__cell-content">431.00</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Баланс">
-                <div class="regular-table__cell-content">2 140.25</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Статус">
-                <div class="regular-table__cell-content">Разрешен к выдаче;</div>
-            </div>
-        </td>
-        <td class="regular-table__cell regular-table__cell--controls">
-            <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
-                <div class="regular-table__cell-content">
-                    <button class="btn btn--style--green btn--size--sm">
-                        <i class="btn__icon icon--excel"></i> Excel
-                    </button>
-                </div>
-            </div>
-        </td>
-    </tr><!--regular table row-->
-
-    <tr class="regular-table__row">
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
-                <div class="regular-table__cell-content">2766719</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата создания">
-                <div class="regular-table__cell-content"><a href="#">02.03.2021</a></div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
-                <div class="regular-table__cell-content">02.03.2021</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Автор">
-                <div class="regular-table__cell-content">Константин Кириченко</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
-                <div class="regular-table__cell-content">1 166.00</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Баланс">
-                <div class="regular-table__cell-content">2 140.25</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Статус">
-                <div class="regular-table__cell-content">Разрешен к выдаче; Выдан; Полностью оплачен;</div>
-            </div>
-        </td>
-        <td class="regular-table__cell regular-table__cell--controls">
-            <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
-                <div class="regular-table__cell-content">
-                    <button class="btn btn--style--green btn--size--sm">
-                        <i class="btn__icon icon--excel"></i> Excel
-                    </button>
-                </div>
-            </div>
-        </td>
-    </tr><!--regular table row-->
-
-    <tr class="regular-table__row">
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
-                <div class="regular-table__cell-content">3564456</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата создания">
-                <div class="regular-table__cell-content"><a href="#">01.03.2021</a></div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
-                <div class="regular-table__cell-content">01.03.2021</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Автор">
-                <div class="regular-table__cell-content">Константин Кириченко</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
-                <div class="regular-table__cell-content">829.00</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Баланс">
-                <div class="regular-table__cell-content">2 140.25</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Статус">
-                <div class="regular-table__cell-content">Разрешен к выдаче; Выдан; Полностью оплачен;</div>
-            </div>
-        </td>
-        <td class="regular-table__cell regular-table__cell--controls">
-            <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
-                <div class="regular-table__cell-content">
-                    <button class="btn btn--style--green btn--size--sm">
-                        <i class="btn__icon icon--excel"></i> Excel
-                    </button>
-                </div>
-            </div>
-        </td>
-    </tr><!--regular table row-->
-
-    <tr class="regular-table__row">
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
-                <div class="regular-table__cell-content">2766719</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата создания">
-                <div class="regular-table__cell-content"><a href="#">02.03.2021</a></div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
-                <div class="regular-table__cell-content">02.03.2021</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Автор">
-                <div class="regular-table__cell-content">Константин Кириченко</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
-                <div class="regular-table__cell-content">1 166.00</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Баланс">
-                <div class="regular-table__cell-content">2 140.25</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Статус">
-                <div class="regular-table__cell-content">Разрешен к выдаче; Выдан; Полностью оплачен;</div>
-            </div>
-        </td>
-        <td class="regular-table__cell regular-table__cell--controls">
-            <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
-                <div class="regular-table__cell-content">
-                    <button class="btn btn--style--green btn--size--sm">
-                        <i class="btn__icon icon--excel"></i> Excel
-                    </button>
-                </div>
-            </div>
-        </td>
-    </tr><!--regular table row-->
-
-    <tr class="regular-table__row">
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
-                <div class="regular-table__cell-content">3564456</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата создания">
-                <div class="regular-table__cell-content"><a href="#">01.03.2021</a></div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
-                <div class="regular-table__cell-content">01.03.2021</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Автор">
-                <div class="regular-table__cell-content">Константин Кириченко</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
-                <div class="regular-table__cell-content">829.00</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Баланс">
-                <div class="regular-table__cell-content">2 140.25</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Статус">
-                <div class="regular-table__cell-content">Разрешен к выдаче; Выдан; Полностью оплачен;</div>
-            </div>
-        </td>
-        <td class="regular-table__cell regular-table__cell--controls">
-            <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
-                <div class="regular-table__cell-content">
-                    <button class="btn btn--style--green btn--size--sm">
-                        <i class="btn__icon icon--excel"></i> Excel
-                    </button>
-                </div>
-            </div>
-        </td>
-    </tr><!--regular table row-->
-
-    <tr class="regular-table__row">
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
-                <div class="regular-table__cell-content">2132334</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата создания">
-                <div class="regular-table__cell-content"><a href="#">28.02.2021</a></div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
-                <div class="regular-table__cell-content">01.03.2021</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Автор">
-                <div class="regular-table__cell-content">Константин Кириченко</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
-                <div class="regular-table__cell-content">1 224.00</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Баланс">
-                <div class="regular-table__cell-content">2 140.25</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Статус">
-                <div class="regular-table__cell-content">Разрешен к выдаче; Выдан;</div>
-            </div>
-        </td>
-        <td class="regular-table__cell regular-table__cell--controls">
-            <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
-                <div class="regular-table__cell-content">
-                    <button class="btn btn--style--green btn--size--sm">
-                        <i class="btn__icon icon--excel"></i> Excel
-                    </button>
-                </div>
-            </div>
-        </td>
-    </tr><!--regular table row-->
-
-    <tr class="regular-table__row">
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
-                <div class="regular-table__cell-content">1235567</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата создания">
-                <div class="regular-table__cell-content"><a href="#">28.02.2021</a></div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
-                <div class="regular-table__cell-content">01.03.2021</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Автор">
-                <div class="regular-table__cell-content">Константин Кириченко</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
-                <div class="regular-table__cell-content">431.00</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Баланс">
-                <div class="regular-table__cell-content">2 140.25</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Статус">
-                <div class="regular-table__cell-content">Разрешен к выдаче;</div>
-            </div>
-        </td>
-        <td class="regular-table__cell regular-table__cell--controls">
-            <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
-                <div class="regular-table__cell-content">
-                    <button class="btn btn--style--green btn--size--sm">
-                        <i class="btn__icon icon--excel"></i> Excel
-                    </button>
-                </div>
-            </div>
-        </td>
-    </tr><!--regular table row-->
-
-    <tr class="regular-table__row">
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
-                <div class="regular-table__cell-content">2766719</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата создания">
-                <div class="regular-table__cell-content"><a href="#">02.03.2021</a></div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
-                <div class="regular-table__cell-content">02.03.2021</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Автор">
-                <div class="regular-table__cell-content">Константин Кириченко</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
-                <div class="regular-table__cell-content">1 166.00</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Баланс">
-                <div class="regular-table__cell-content">2 140.25</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Статус">
-                <div class="regular-table__cell-content">Разрешен к выдаче; Выдан; Полностью оплачен;</div>
-            </div>
-        </td>
-        <td class="regular-table__cell regular-table__cell--controls">
-            <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
-                <div class="regular-table__cell-content">
-                    <button class="btn btn--style--green btn--size--sm">
-                        <i class="btn__icon icon--excel"></i> Excel
-                    </button>
-                </div>
-            </div>
-        </td>
-    </tr><!--regular table row-->
-
-    <tr class="regular-table__row">
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
-                <div class="regular-table__cell-content">3564456</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата создания">
-                <div class="regular-table__cell-content"><a href="#">01.03.2021</a></div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
-                <div class="regular-table__cell-content">01.03.2021</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Автор">
-                <div class="regular-table__cell-content">Константин Кириченко</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
-                <div class="regular-table__cell-content">829.00</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Баланс">
-                <div class="regular-table__cell-content">2 140.25</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Статус">
-                <div class="regular-table__cell-content">Разрешен к выдаче; Выдан; Полностью оплачен;</div>
-            </div>
-        </td>
-        <td class="regular-table__cell regular-table__cell--controls">
-            <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
-                <div class="regular-table__cell-content">
-                    <button class="btn btn--style--green btn--size--sm">
-                        <i class="btn__icon icon--excel"></i> Excel
-                    </button>
-                </div>
-            </div>
-        </td>
-    </tr><!--regular table row-->
-
-    <tr class="regular-table__row">
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
-                <div class="regular-table__cell-content">2132334</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата создания">
-                <div class="regular-table__cell-content"><a href="#">28.02.2021</a></div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
-                <div class="regular-table__cell-content">01.03.2021</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Автор">
-                <div class="regular-table__cell-content">Константин Кириченко</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
-                <div class="regular-table__cell-content">1 224.00</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Баланс">
-                <div class="regular-table__cell-content">2 140.25</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Статус">
-                <div class="regular-table__cell-content">Разрешен к выдаче; Выдан;</div>
-            </div>
-        </td>
-        <td class="regular-table__cell regular-table__cell--controls">
-            <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
-                <div class="regular-table__cell-content">
-                    <button class="btn btn--style--green btn--size--sm">
-                        <i class="btn__icon icon--excel"></i> Excel
-                    </button>
-                </div>
-            </div>
-        </td>
-    </tr><!--regular table row-->
-
-    <tr class="regular-table__row">
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
-                <div class="regular-table__cell-content">1235567</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата создания">
-                <div class="regular-table__cell-content"><a href="#">28.02.2021</a></div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
-                <div class="regular-table__cell-content">01.03.2021</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Автор">
-                <div class="regular-table__cell-content">Константин Кириченко</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
-                <div class="regular-table__cell-content">431.00</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Баланс">
-                <div class="regular-table__cell-content">2 140.25</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Статус">
-                <div class="regular-table__cell-content">Разрешен к выдаче;</div>
-            </div>
-        </td>
-        <td class="regular-table__cell regular-table__cell--controls">
-            <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
-                <div class="regular-table__cell-content">
-                    <button class="btn btn--style--green btn--size--sm">
-                        <i class="btn__icon icon--excel"></i> Excel
-                    </button>
-                </div>
-            </div>
-        </td>
-    </tr><!--regular table row-->
-
-    <tr class="regular-table__row">
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
-                <div class="regular-table__cell-content">2766719</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата создания">
-                <div class="regular-table__cell-content"><a href="#">02.03.2021</a></div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
-                <div class="regular-table__cell-content">02.03.2021</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Автор">
-                <div class="regular-table__cell-content">Константин Кириченко</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
-                <div class="regular-table__cell-content">1 166.00</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Баланс">
-                <div class="regular-table__cell-content">2 140.25</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Статус">
-                <div class="regular-table__cell-content">Разрешен к выдаче; Выдан; Полностью оплачен;</div>
-            </div>
-        </td>
-        <td class="regular-table__cell regular-table__cell--controls">
-            <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
-                <div class="regular-table__cell-content">
-                    <button class="btn btn--style--green btn--size--sm">
-                        <i class="btn__icon icon--excel"></i> Excel
-                    </button>
-                </div>
-            </div>
-        </td>
-    </tr><!--regular table row-->
-
-    <tr class="regular-table__row">
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
-                <div class="regular-table__cell-content">3564456</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата создания">
-                <div class="regular-table__cell-content"><a href="#">01.03.2021</a></div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
-                <div class="regular-table__cell-content">01.03.2021</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Автор">
-                <div class="regular-table__cell-content">Константин Кириченко</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
-                <div class="regular-table__cell-content">829.00</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Баланс">
-                <div class="regular-table__cell-content">2 140.25</div>
-            </div>
-        </td>
-        <td class="regular-table__cell">
-            <div class="regular-table__cell-inner" data-cell-name="Статус">
-                <div class="regular-table__cell-content">Разрешен к выдаче; Выдан; Полностью оплачен;</div>
-            </div>
-        </td>
-        <td class="regular-table__cell regular-table__cell--controls">
-            <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
-                <div class="regular-table__cell-content">
-                    <button class="btn btn--style--green btn--size--sm">
-                        <i class="btn__icon icon--excel"></i> Excel
-                    </button>
-                </div>
-            </div>
-        </td>
-    </tr><!--regular table row-->
-
-</table><!--regular table-->
-
-<!--regular-table&#45;&#45;collapsed-->
+<tr class="regular-table__row">
+    <td class="regular-table__cell regular-table__cell--mark">
+        <div class="regular-table__cell-inner">
+            <div class="regular-table__cell-content">
+                <label class="checkbox-radio">
+                    <input class="checkbox-radio__input" type="checkbox" name="" value="">
+                    <span class="checkbox-radio__toggler"></span>
+                    <span class="checkbox-radio__label">Отметить</span>
+                </label>
+            </div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Номер заказа">
+            <div class="regular-table__cell-content">637990</div>
+        </div>
+    </td>
+    <td class="regular-table__cell regular-table__cell--photo">
+        <div class="regular-table__cell-inner" data-cell-name="Фото">
+            <div class="regular-table__cell-content">
+                <img src="assets/img/products/10.jpg" alt="image" class="regular-table__product-photo">
+            </div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Дата создания">
+            <div class="regular-table__cell-content nowrap"><a href="#">08.03.2021</a></div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Дата выдачи">
+            <div class="regular-table__cell-content nowrap">08.03.2021</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Автор">
+            <div class="regular-table__cell-content">Кристина Бузина</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Сумма, грн">
+            <div class="regular-table__cell-content">
+                <input class="input-text input-text--sm form-row__control form-row__control" type="text" value="1 389.00">
+            </div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Баланс">
+            <div class="regular-table__cell-content nowrap">341.76</div>
+        </div>
+    </td>
+    <td class="regular-table__cell">
+        <div class="regular-table__cell-inner" data-cell-name="Статус">
+            <div class="regular-table__cell-content">Разрешен к выдаче; Полностью оплачен;</div>
+        </div>
+    </td>
+    <td class="regular-table__cell regular-table__cell--controls">
+        <div class="regular-table__cell-inner" data-cell-name="Экспортировать">
+            <div class="regular-table__cell-content">
+                <button class="btn btn--style--green btn--size--sm">
+                    <i class="btn__icon icon--excel"></i> Excel
+                </button>
+            </div>
+        </div>
+    </td>
+</tr><!--regular table row-->

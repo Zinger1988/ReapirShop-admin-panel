@@ -6,10 +6,10 @@
 
   &__group{
     display: block;
-    margin-bottom: 1rem;
+    margin: 2rem 0;
 
     @include media(">=md"){
-      margin-bottom: 1.3rem;
+      margin: 3rem 0;
     }
   }
 

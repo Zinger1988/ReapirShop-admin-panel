@@ -1,0 +1,213 @@
+---
+layout: default
+title: Admin-panel
+---
+
+<main class="main page__main">
+
+    {{> sidebar }}
+
+    <div class="main__content content">
+        <div class="container">
+
+            <div class="crumbs content__crumbs">
+                <ul class="crumbs__list">
+                    <li class="crumbs__list-item">
+                        <a class="crumbs__list-link" href="#">Главная</a>
+                    </li>
+                    <li class="crumbs__list-item">
+                        <span class="crumbs__list-current">Заголовок</span>
+                    </li>
+                </ul>
+            </div><!-- crumbs -->
+
+            <div class="content-wrapper content__content-wrapper">
+
+                <div class="content-wrapper__content-head content-head">
+
+                    <h1 class="content-head__title">Заголовок 1</h1>
+
+                </div><!--content head-->
+
+                <div class="tabs content-wrapper__tabs">
+                    <a href="#" class="tabs__item tabs__item--active">Заголовок таба 1</a>
+                    <a href="#" class="tabs__item">Заголовок таба 2</a>
+                    <a href="#" class="tabs__item">Заголовок таба 3</a>
+                    <a href="#" class="tabs__item">Заголовок таба 4</a>
+                    <a href="#" class="tabs__item">Заголовок таба 5</a>
+                </div>
+
+                <div class="content-wrapper__body">
+
+                    <div class="item-card content-wrapper__item-card">
+
+                        <div class="item-card__img">
+                            <img src="assets/img/products/01.jpg" alt="" class="item-card__img-item">
+                        </div><!--item card img-->
+
+                        <div class="item-card__info">
+
+                            <div class="control-bar control-bar--text-right item-card__control-bar">
+                                <button class="btn btn--style--blue btn--size--sm control-bar__btn">Сохранить изменения</button>
+                                <button class="btn btn--style--outline-blue btn--size--sm control-bar__btn">Сбросить изменения</button>
+                            </div><!--item card control bar-->
+
+                            <div class="item-card__info__inner">
+                                <h2>Heading 2</h2>
+
+                                <p>
+                                    Разнообразный и богатый опыт реализация намеченных плановых заданий позволяет оценить значение позиций,
+                                    занимаемых участниками в отношении поставленных задач. Таким образом реализация намеченных плановых заданий
+                                    позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным
+                                    потребностям. С другой стороны дальнейшее развитие различных форм деятельности требуют определения и
+                                    уточнения позиций, занимаемых участниками в отношении поставленных задач.
+                                </p>
+
+                                <ul>
+                                    <li>Не следует, однако забывать, что начало повседневной работы по формированию</li>
+                                    <li>Равным образом постоянный количественный рост и сфера нашей активности</li>
+                                    <li>Задача организации, в особенности же постоянный количественный рост и сфера нашей активности</li>
+                                    <li>Сложившаяся структура организации влечет за собой процесс внедрения</li>
+                                </ul>
+
+                                <h3>Heading 3</h3>
+
+                                <p>
+                                    Задача организации, в особенности же укрепление и развитие структуры способствует подготовки и реализации
+                                    новых предложений. Разнообразный и богатый опыт начало повседневной работы по формированию позиции
+                                    способствует подготовки и реализации новых предложений.
+                                </p>
+
+                                <div class="form" action="">
+
+                                    <div class="form__body">
+
+                                        <div class="form__group">
+
+                                            <div class="form-row form__row">
+                                                <span class="form-row__title">Row title</span>
+                                                <input class="input-text form-row__control" type="text">
+                                            </div>
+
+                                            <div class="form-row form__row">
+                                                <span class="form-row__title">Row title</span>
+                                                <textarea class="input-textarea form-row__control"></textarea>
+                                            </div>
+
+                                            <div class="form-row form__row">
+                                                <span class="form-row__title">Row title</span>
+                                                <select class="input-select select2 form-row__control">
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                    <option value="">3</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-row form__row">
+                                                <span class="form-row__title">Row title</span>
+                                                <select class="input-select select2-search form-row__control">
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                    <option value="">3</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-row form-row--double filter-panel__form-row">
+                                                <span class="form-row__title">Дата создания</span>
+                                                <input class="input-text input-text--calendar form-row__control datepicker-here" type="text" placeholder="Начальная">
+                                                <input class="input-text input-text--calendar form-row__control datepicker-here" type="text" placeholder="Конечная">
+                                            </div>
+                                        </div>
+
+                                        <div class="form__group">
+                                            <div class="form__group-title">Group title</div>
+                                            <div class="form-row form__row">
+                                                <label class="checkbox-radio">
+                                                    <input class="checkbox-radio__input" type="checkbox" name="" value="">
+                                                    <span class="checkbox-radio__toggler"></span>
+                                                    <span class="checkbox-radio__label">Новинки</span>
+                                                </label>
+                                            </div>
+
+                                            <div class="form-row form__row">
+                                                <label class="checkbox-radio">
+                                                    <input class="checkbox-radio__input" type="radio" name="1" value="">
+                                                    <span class="checkbox-radio__toggler"></span>
+                                                    <span class="checkbox-radio__label">Radio</span>
+                                                </label>
+                                            </div>
+
+                                            <div class="form-row form__row">
+                                                <label class="checkbox-radio">
+                                                    <input class="checkbox-radio__input" type="radio" name="1" value="">
+                                                    <span class="checkbox-radio__toggler"></span>
+                                                    <span class="checkbox-radio__label">Radio</span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="form__group">
+                                            <div class="form-row form__row">
+                                                <span class="form-row__title">Row title</span>
+                                                <input class="input-text input-text--calendar form-row__control datepicker-here" type="text">
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <ol>
+                                    <li>Не следует, однако забывать, что начало повседневной работы по формированию</li>
+                                    <li>Равным образом постоянный количественный рост и сфера нашей активности</li>
+                                    <li>Задача организации, в особенности же постоянный количественный рост и сфера нашей активности</li>
+                                    <li>Сложившаяся структура организации влечет за собой процесс внедрения</li>
+                                </ol>
+
+                                <table>
+                                    <tr>
+                                        <th>Столбец 1</th>
+                                        <th>Столбец 2</th>
+                                        <th>Столбец 3</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Ячейка 1</td>
+                                        <td>Ячейка 2</td>
+                                        <td>Ячейка 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ячейка 1</td>
+                                        <td>Ячейка 2</td>
+                                        <td>Ячейка 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ячейка 1</td>
+                                        <td>Ячейка 2</td>
+                                        <td>Ячейка 3</td>
+                                    </tr>
+                                </table>
+                            </div><!--item card info inner-->
+
+                            <div class="control-bar control-bar--text-right item-card__control-bar">
+                                <button class="btn btn--style--blue btn--size--sm control-bar__btn">Сохранить изменения</button>
+                                <button class="btn btn--style--outline-blue btn--size--sm control-bar__btn">Сбросить изменения</button>
+                            </div><!--item card control bar-->
+
+                        </div><!--item card info-->
+
+                    </div><!--item card-->
+
+                    <h2>Заголовок</h2>
+
+                    <table class="regular-table content-wrapper__regular-table" data-table-breakpoint="1340px">
+                        {{> regular-table }}
+                    </table><!--regular table-->
+
+                </div><!--content wrapper body-->
+
+            </div><!--content wrapper-->
+
+        </div>
+    </div><!--main content-->
+
+</main><!--page main-->

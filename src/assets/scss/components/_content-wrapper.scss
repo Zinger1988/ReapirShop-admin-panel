@@ -15,8 +15,29 @@
     }
   }
 
+  &__regular-table{
+    margin-bottom: 1.5rem;
+  }
+
   &__active-filters{
     margin-bottom: 1rem;
+  }
+
+  &__control-bar{
+    margin-bottom: 1.5rem;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  &__item-card:not(:last-child){
+    margin-bottom: 5rem;
+    border-bottom: 1px solid #E8E8E8;
+  }
+
+  &__tabs{
+    margin-bottom: 2rem;
   }
 
   //&__active-filters{

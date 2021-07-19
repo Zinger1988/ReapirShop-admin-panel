@@ -3,6 +3,20 @@
 
   $this: &;
 
+  &__product-photo{
+    display: block;
+    background-color: $white;
+    border-radius: 4px;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  &__row--marked{
+    #{$this}__cell{
+      background-color: #CFE5F5 !important;
+    }
+  }
+
   &--collapsed{
 
     #{$this}__row{
@@ -71,9 +85,34 @@
       font-weight: 500;
     }
 
+    #{$this}__cell--mark{
+      grid-column: 1 / -1;
+      order: -1;
+
+      #{$this}__cell-inner{
+        justify-content: flex-start;
+
+        &::before{
+          display: none;
+        }
+      }
+
+      #{$this}__cell-content{
+        padding: .5rem 0;
+        width: 100%;
+        text-align: left;
+        max-width: none;
+      }
+
+      .checkbox-radio{
+        font-size: 1.4rem;
+      }
+    }
+
     #{$this}__cell--controls{
       grid-column: 1 / -1;
       padding: 1rem 1rem;
+      order: 9999;
 
       @include media(">=xxl"){
         padding: 1.5rem 1.5rem;
@@ -90,6 +129,18 @@
         display: flex;
         justify-content: flex-end;
       }
+    }
+
+    #{$this}__cell--photo{
+
+      #{$this}__cell-inner{
+        align-items: center;
+      }
+    }
+
+    #{$this}__product-photo{
+      width: 6rem;
+      height: 6rem;
     }
   }
 
@@ -124,6 +175,17 @@
           padding: 1.2rem 2rem;
           font-size: 1.2rem;
         }
+      }
+
+      &--mark{
+        .checkbox-radio__label{
+          display: none;
+        }
+      }
+
+      #{$this}__product-photo{
+        width: 5rem;
+        height: 5rem;
       }
     }
   }

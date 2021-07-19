@@ -1,0 +1,16 @@
+.control-bar{
+  background-color: rgba($dodgerBlue, .06);
+  border-radius: 6px;
+  padding: 1rem;
+  display: grid;
+  grid-gap: .5rem;
+  border: 1px solid rgba($dodgerBlue, .1);
+
+  @include media(">=sm"){
+    display: block;
+
+    &--text-right{
+      text-align: right;
+    }
+  }
+}

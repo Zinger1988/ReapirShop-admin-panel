@@ -1,0 +1,53 @@
+.item-card{
+
+  @include media(">=lg"){
+    display: flex;
+  }
+
+  &__control-bar{
+    margin-bottom: 1.5rem;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  &__img{
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #E8E8E8;
+
+    @include media(">=lg"){
+      padding: 0 3rem 4rem 0;
+      margin: 0 3rem 0 0;
+      border-bottom: none;
+      border-right: 1px solid #E8E8E8;
+      flex-shrink: 0;
+    }
+  }
+
+  &__img-item{
+    display: block;
+    width: 70vw;
+    height: 70vw;
+    max-width: 40rem;
+    max-height: 40rem;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 6px;
+    margin: 0 auto;
+    border: 1px solid rgba(#E8E8E8, .7);
+
+    @include media(">=lg"){
+      width: 35rem;
+      height: 35rem;
+    }
+  }
+
+  &__info{
+    padding: 0 0 3rem;
+
+    @include media(">=lg"){
+      padding: 0 0 4rem 0;
+    }
+  }
+}
