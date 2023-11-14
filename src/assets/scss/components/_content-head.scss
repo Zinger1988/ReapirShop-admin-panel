@@ -88,6 +88,10 @@
     @include media(">=md"){
       margin: 0 1.5rem 0 0;
     }
+
+    @include media(">=xl"){
+      flex: 0;
+    }
   }
 
   &__select-pre{

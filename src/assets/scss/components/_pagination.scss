@@ -12,7 +12,9 @@
     background-color: $scienceBlue;
     color: $white;
     text-align: center;
-    line-height: 3.3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     @include animate(background-color);
 
     @include media(">=md"){

@@ -105,7 +105,7 @@ $(document).ready(function () {
         },
         table() {
             const tables = $('.regular-table');
-            const tableInputs = $('.regular-table__cell--mark .checkbox-radio__input')
+            const tableInputs = $('.regular-table__cell--mark .checkbox-radio__input');
 
             function markTableRows(checkboxElem, parentSelector, activeClass){
                 if(checkboxElem.prop('checked')){
@@ -120,18 +120,36 @@ $(document).ready(function () {
             })
 
             tableInputs.on('click', function () {
-                    markTableRows($(this), '.regular-table__row', 'regular-table__row--marked');
-                });
+                markTableRows($(this), '.regular-table__row', 'regular-table__row--marked');
+            });
 
             tables.each(function () {
 
                 const markCheckbox = $(this).find('.regular-table__cell--mark .checkbox-radio__input');
-                markCheckbox.on('click', markTableRows.bind(null, $(this), '.regular-table__row', 'regular-table__row--marked'))
+                const headCheckbox = $(this).find('.regular-table__row--head .checkbox-radio__input');
+                const headCheckboxIndex = headCheckbox.closest('.regular-table__cell').index();
+
+                headCheckbox.on('click', () => {
+                    const tableRows = $(this).find('.regular-table__row:not(.regular-table__row--head)');
+
+                    tableRows.each(function () {
+                        const tableCell = $(this).find('.regular-table__cell:not(.regular-table__cell--head)').eq(headCheckboxIndex);
+                        const input = tableCell.find('.checkbox-radio__input');
+
+                        if(headCheckbox.prop('checked')){
+                            input.prop('checked', 'true')
+                        } else {
+                            input.prop('checked', 'false')
+                        }
+                    })
+                })
+
+                markCheckbox.on('click', markTableRows.bind(null, $(this), '.regular-table__row', 'regular-table__row--marked'));
 
                 const breakpoint = $(this).attr('data-table-breakpoint');
                 if(window.matchMedia(`(min-width: ${breakpoint})`).matches){
-                    $(this).addClass('regular-table--expaned')
-                    $(this).removeClass('regular-table--collapsed')
+                    $(this).addClass('regular-table--expaned');
+                    $(this).removeClass('regular-table--collapsed');
                 } else {
                     $(this).addClass('regular-table--collapsed');
                     $(this).removeClass('regular-table--expaned');
